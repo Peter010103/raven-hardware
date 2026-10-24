@@ -1,0 +1,53 @@
+{
+  "version": "4.5.5",
+  "commit": "4adbd3ef7cb546947600e5f747bd5453c9573063",
+  "source_reference_only": true,
+  "installed_firmware": "None per operator; archived bench settings do not describe current aircraft",
+  "files": [
+    {
+      "path": "src/main/flight/mixer.c",
+      "url": "https://raw.githubusercontent.com/betaflight/betaflight/4adbd3ef7cb546947600e5f747bd5453c9573063/src/main/flight/mixer.c",
+      "SHA256": "399513a6e3069a3aa2548a81dccf7bc0f7429d39fcb995ae737ddf3b7e57e01b"
+    },
+    {
+      "path": "src/main/flight/mixer_init.c",
+      "url": "https://raw.githubusercontent.com/betaflight/betaflight/4adbd3ef7cb546947600e5f747bd5453c9573063/src/main/flight/mixer_init.c",
+      "SHA256": "32b8b1ff49cce2f33f791f3f4ad869c8db2ee8d0d1207adc0ebf9e90379f0f0c"
+    },
+    {
+      "path": "src/main/fc/rc.c",
+      "url": "https://raw.githubusercontent.com/betaflight/betaflight/4adbd3ef7cb546947600e5f747bd5453c9573063/src/main/fc/rc.c",
+      "SHA256": "340cfd8de82ba2de2c9d072460423716fbd3b7a5d3e4799cdabc325eaf8dcbb9"
+    },
+    {
+      "path": "src/main/drivers/dshot.c",
+      "url": "https://raw.githubusercontent.com/betaflight/betaflight/4adbd3ef7cb546947600e5f747bd5453c9573063/src/main/drivers/dshot.c",
+      "SHA256": "d5f87db80815d0b87aaad6dc988e24c37736e47b93ef42494f6e70abd21c0f77"
+    },
+    {
+      "path": "src/main/drivers/dshot.h",
+      "url": "https://raw.githubusercontent.com/betaflight/betaflight/4adbd3ef7cb546947600e5f747bd5453c9573063/src/main/drivers/dshot.h",
+      "SHA256": "ecf59df150b46abe3c684a5dabfdc47ea5b69203d03ce35165cfdbddebf38f40"
+    },
+    {
+      "path": "src/main/drivers/motor.c",
+      "url": "https://raw.githubusercontent.com/betaflight/betaflight/4adbd3ef7cb546947600e5f747bd5453c9573063/src/main/drivers/motor.c",
+      "SHA256": "8bba0754089bb4eb35844db4b02f823dde3561df5dbb8d03992e854a7154d1e8"
+    },
+    {
+      "path": "src/main/sensors/battery.c",
+      "url": "https://raw.githubusercontent.com/betaflight/betaflight/4adbd3ef7cb546947600e5f747bd5453c9573063/src/main/sensors/battery.c",
+      "SHA256": "dfcf3621d29954d3520e773209645e7e02b9109a9bbc139c39bacc2bcbf5224f"
+    },
+    {
+      "path": "src/main/sensors/battery.h",
+      "url": "https://raw.githubusercontent.com/betaflight/betaflight/4adbd3ef7cb546947600e5f747bd5453c9573063/src/main/sensors/battery.h",
+      "SHA256": "a3b68601d9b8cfd81c88fe5f689a334b281b07850ed5eac007be96cc8e685d3e"
+    },
+    {
+      "path": "src/main/sensors/voltage.c",
+      "url": "https://raw.githubusercontent.com/betaflight/betaflight/4adbd3ef7cb546947600e5f747bd5453c9573063/src/main/sensors/voltage.c",
+      "SHA256": "306d70a8ae388a951688c01f410b63ae187fce111fafec6c29445de431c13289"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "Local offline simulation adapter; no copied Sanity physical coefficients used. Sanity software and reference geometry reused.",
+  "sources": {
+    "controller.py": {
+      "source": "loco_mjx/experiments/sanity_pitch_mpc/controller.py",
+      "sha256": "63f051c5284ba32ce658b25d2d72f2f05bf712027fea0524ffdb910acff114aa"
+    },
+    "run_in_reference.py": {
+      "source": "loco_mjx/experiments/sanity_pitch_mpc/run_in_reference.py",
+      "sha256": "551648889cf12d1352156a2c111821398b2619919cc4e39aaec335e5ad200525"
+    },
+    "run_in_profile.json": {
+      "source": "loco_mjx/experiments/sanity_pitch_mpc/run_in_profile.json",
+      "sha256": "9c09f7135f56d5a0ae205768ca032128914d877a019c258d82dbdee91dbbbcd2"
+    }
+  }
+}

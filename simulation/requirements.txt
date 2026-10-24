@@ -1,0 +1,4 @@
+-r ../requirements.txt
+mujoco==3.7.0
+casadi==3.7.2
+# acados_template requires a separately built acados installation; see README.

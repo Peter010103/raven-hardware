@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "hash": "SHA256",
-  "scope": "Packaged immutable evidence, canonical parameters and curated media; generated build/ is excluded",
+  "scope": "Packaged immutable evidence, canonical parameters, robot descriptions and curated media; generated build/ is excluded",
   "files": [
     {
       "path": "data/README.md",
@@ -152,6 +152,11 @@
       "path": "data/provenance/natnet_marker_crosscheck.txt",
       "bytes": 373,
       "sha256": "b64087fd1c413b50ad2a1e06e4b8e4648e0ebba85e8552dd1a133967c3ecbcc5"
+    },
+    {
+      "path": "data/provenance/simulation_model.json",
+      "bytes": 2009,
+      "sha256": "f034e2ce87672f5b7d563f1bbd88d6cbc65b2101b10583012759ebe4226840a8"
     },
     {
       "path": "data/raw/bifilar/raven_bifilar_20261024_012929_07d8a3_yaw/capture_receipt.json",
@@ -324,6 +329,11 @@
       "sha256": "8d4b2be06e5beef9daa0f20502aee264889657ebe1f786d6cdbf4d8eaaea26f9"
     },
     {
+      "path": "parameters/mpc_simulation.json",
+      "bytes": 1414,
+      "sha256": "8fa3bc179ed652af69253c904371b3f95d09d97d5e0164c961b13d5e13d753e8"
+    },
+    {
       "path": "parameters/reaction_torque_model.json",
       "bytes": 2472,
       "sha256": "2d99f467d0501634de48add2df5a25a35a24ab23f09d0cae136255393094068e"
@@ -387,6 +397,16 @@
       "path": "media/inertia/suspension.svg",
       "bytes": 1357678,
       "sha256": "c7dd69543826f70f5b9e3582ad6322101034c546ef8c0fa746413540aa9c26ba"
+    },
+    {
+      "path": "models/raven.urdf",
+      "bytes": 1393,
+      "sha256": "0a1897b1991d7a4de0ec83814ac92a79c706c83c1b5179fcfabadbb3e6873ba4"
+    },
+    {
+      "path": "models/raven.xml",
+      "bytes": 1708,
+      "sha256": "797e93372033b7cc3392b3a3361d0a2fd56977bea9a9e0d8afb2a176a7fe7621"
     }
   ]
 }

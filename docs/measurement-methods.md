@@ -1,5 +1,7 @@
 # Measurement methods and interpretation
 
+The Betaflight configuration below describes the historical bench campaign. The intended flight FC is currently unflashed/unconfigured, per the latest operator statement; [the simulation profile](../simulation/proposed_profile.json) is a proposed design.
+
 ## Single-motor actuator campaign
 
 - **Plant:** one EMAX ECO II 2207 1900 KV, 12N14P motor and HQ 5×4.8×3 V1S ACW propeller. The reversed propeller was planned, but no CW identification is included.

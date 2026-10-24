@@ -1,0 +1,35 @@
+"""Compact offline report and figures for the initial Raven MPC screen."""
+import argparse,json,csv
+from pathlib import Path
+import numpy as np
+from scipy.spatial.transform import Rotation
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from matplotlib import font_manager as fm
+from matplotlib.backends.backend_pdf import PdfPages
+ROOT=Path(__file__).resolve().parents[1]
+for p in (Path.home()/'.local/share/fonts').glob('Avenir*.ttf'):fm.fontManager.addfont(str(p))
+plt.rcParams.update({'font.family':['Avenir','DejaVu Sans'],'font.size':10,'axes.grid':True,'grid.alpha':.18,'axes.spines.top':False,'axes.spines.right':False,'pdf.fonttype':3,'svg.fonttype':'none'})
+
+def main():
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--suite',type=Path,required=True);args=p.parse_args();suite=args.suite.resolve();out=suite/'report';out.mkdir(exist_ok=True);summary=json.loads((suite/'summary.json').read_text());cases=summary['cases'];rows=[json.loads(x) for x in (suite/'nominal/trace.jsonl').read_text().splitlines()];t=np.array([x['time_s'] for x in rows]);s=np.array([x['state'] for x in rows]);r=np.array([x['reference'] for x in rows]);cmd=np.array([x['command'] for x in rows]);act=np.array([x['actuator']['motor_external_counts'] for x in rows]);R=Rotation.from_quat(s[:,[4,5,6,3]]).as_matrix();theta=np.unwrap(np.arctan2(R[:,0,2],R[:,2,2]));RR=Rotation.from_quat(r[:,[4,5,6,3]]).as_matrix();thref=np.unwrap(np.arctan2(RR[:,0,2],RR[:,2,2]));pdf=PdfPages(out/'raven_initial_simulation_report.pdf')
+    f=plt.figure(figsize=(8.27,11.69));f.text(.08,.94,'Raven: initial flip simulation',fontsize=22,weight='bold');f.text(.08,.89,'Measured rotor plant • adopted inertia • assumed rate loop',fontsize=11,color='#257d98');items=[['Total suspended mass','0.716 kg'],['COM inertia [10⁻³ kg m²]','Roll 2.05818 / Pitch 1.76736 / Yaw 3.14964'],['Motor-speed model','21.89 ms pole +1.76 ms fitted delay'],['Firmware design','Proposed 4.5.5, DShot600, Acro, fixed 5.5% idle'],['Nominal screen','14.8 V delivered, compensation OFF'],['Nominal force support','0.216…36.540 N; upper MPC bound 34.713 N'],['Rate prior','Assumed PI, nominal 40/40/80 ms scales'],['Validation screen',f'{sum(x["success"] for x in cases)}/{len(cases)} passed; rate2× failed terminal recovery']];a=f.add_axes([.08,.51,.84,.32]);a.axis('off');tab=a.table(cellText=items,colWidths=[.35,.65],bbox=[0,0,1,1],cellLoc='left');tab.auto_set_font_size(False);tab.set_fontsize(8.7)
+    for (i,j),cell in tab.get_celld().items():cell.set_edgecolor('white');cell.set_facecolor('#e7f0f3' if i%2==0 else 'white')
+    text='The plant integrates a free rigid body in native MuJoCo, applying each rotor’s measured-model thrust and reaction torque at its approximate CAD location. Four independent speed states include the identified running lag and delay. Hover is trimmed about the adopted COM.\n\nThe full-attitude MPC reuses the Sanity controller architecture with Raven mass, inertia, geometry and limits. It predicts a simpler force/rate servo. The plant uses an explicit PI engineering surrogate for the unidentified rate controller. No Sanity flight-identified response coefficients are transferred.\n\nThese are conditional simulation results with ideal state and force feedback. The opposite propeller direction, shared supply, moving-air performance, firmware PID response, real observation error and communication timing remain unvalidated. No firmware is installed or hardware commanded.'
+    import textwrap
+    lines=[]
+    for block in text.split('\n'):lines.extend(textwrap.wrap(block,94) or [''])
+    f.text(.08,.46,'\n'.join(lines),va='top',fontsize=10,linespacing=1.5);pdf.savefig(f,dpi=900);plt.close(f)
+    f=plt.figure(figsize=(11.69,8.27));a=f.add_subplot(121,projection='3d');a.plot(*r[:,:3].T,color='black',lw=1.4,label='Reference');a.plot(*s[:,:3].T,color='#257d98',alpha=.7,lw=1.4,label='Native plant');a.set(xlabel='COM X [m]',ylabel='COM Y [m]',zlabel='COM Z [m]',title='One pitch flip, hover-to-hover');a.set_ylim(-.3,.3);a.set_box_aspect([4,.6,2]);a.legend();b=f.add_subplot(222);b.plot(t,theta*180/np.pi,label='Native simulated attitude',color='#257d98');b.plot(t,thref*180/np.pi,color='black',ls='--',label='Reference');b.set(ylabel='Unwrapped pitch [deg]',xlabel='Time [s]');b.legend(fontsize=8);b=f.add_subplot(224);b.plot(t,s[:,2],color='#257d98');b.plot(t,r[:,2],color='black',ls='--');b.set(ylabel='Height [m]',xlabel='Time [s]');f.suptitle('Nominal Raven MPC: full inversion and recovery');f.tight_layout();f.savefig(out/'flip-tracking.svg');f.savefig(out/'flip-tracking.png',dpi=600);pdf.savefig(f,dpi=900);plt.close(f)
+    f,axes=plt.subplots(3,1,figsize=(11.69,8.27),layout='constrained');axes[0].plot(t,s[:,11],color='#257d98',label='Actual body pitch rate');axes[0].plot(t,cmd[:,2],color='#bd762b',label='CTBR request');axes[0].set(ylabel='Pitch rate [rad/s]');axes[0].legend();axes[1].plot(t,s[:,13],color='#257d98',label='Actual rotor force sum');axes[1].plot(t,cmd[:,0],color='#bd762b',label='Requested total force');axes[1].set(ylabel='Thrust [N]');axes[1].legend()
+    for i in range(4):axes[2].plot(t,act[:,i],label=f'Rotor{i}')
+    axes[2].set(ylabel='Direct-equivalent command',xlabel='Time [s]');axes[2].legend(ncol=4);f.suptitle('Measured-model rotor dynamics and physical command allocation');f.savefig(out/'actuation.svg');f.savefig(out/'actuation.png',dpi=600);pdf.savefig(f,dpi=900);plt.close(f)
+    f=plt.figure(figsize=(11.69,8.27));f.text(.06,.94,'Sensitivity screen: retain failures',fontsize=21,weight='bold');a=f.add_axes([.06,.26,.88,.59]);a.axis('off');table=[[x['case'],'PASS' if x['success'] else 'FAIL',f'{100*x["position_RMSE_m"]:.2f}',f'{x["terminal_attitude_error_deg"]:.2f}',f'{x["mpc_time_ms"]["max"]:.1f}',str(x['motor_command_support_clipped_inner_updates'])] for x in cases];tab=a.table(cellText=table,colLabels=['Case','Recovery','Mission RMS [cm]','Final attitude [deg]','Max MPC [ms]','Support clips'],bbox=[0,0,1,1],cellLoc='left');tab.auto_set_font_size(False);tab.set_fontsize(9)
+    for (i,j),cell in tab.get_celld().items():cell.set_edgecolor('white');cell.set_facecolor('#e8f1f3' if i%2==0 else 'white');
+    f.text(.06,.18,'Success requires solver validity, envelope compliance, requested inversions/turns,\nfinal position error <15 cm and final attitude error <10°. The twice-slower rate prior\nleaves excessive yaw/attitude error. These cases are chosen sensitivities, not a\nprobabilistic robustness certificate. State feedback is ideal in all cases.',fontsize=11,va='top',linespacing=1.6);pdf.savefig(f,dpi=900);f.savefig(out/'sensitivity.png',dpi=600);plt.close(f)
+    pdf.close();columns=['case','success','failure','pitch_turns','inversions','position_RMSE_m','final_position_error_m','terminal_attitude_error_deg','motor_command_support_clipped_inner_updates']
+    with (out/'results.csv').open('w',newline='') as stream:w=csv.DictWriter(stream,fieldnames=columns,extrasaction='ignore');w.writeheader();w.writerows(cases)
+    print(out/'raven_initial_simulation_report.pdf')
+
+if __name__=='__main__':main()

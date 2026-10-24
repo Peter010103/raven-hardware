@@ -1,0 +1,569 @@
+{
+  "status": "conditional_simulation_screen_complete",
+  "screen_cases": [
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 250,
+      "pitch_turns": -1.067124674961389e-06,
+      "inversions": 0,
+      "position_RMSE_m": 6.63884362007386e-05,
+      "final_position_error_m": 6.123235346460048e-05,
+      "terminal_attitude_error_deg": 0.0003762318063033849,
+      "height_range_m": [
+        0.5000005192874244,
+        0.5000774653461328
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.089148985047359,
+        "max": 12.233020999701694
+      },
+      "case": "hover",
+      "options": [
+        "--hover-only"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": null,
+      "final_speed_m_s": 0.0001998500819830927,
+      "final_body_rate_rad_s": [
+        -3.417969741157941e-05,
+        0.00011924213799933958,
+        1.0742414502030598e-07
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1358.3014049476342,
+        1381.3142687084548
+      ]
+    },
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 466,
+      "pitch_turns": 1.000000208673388,
+      "inversions": 1,
+      "position_RMSE_m": 0.005934500039446829,
+      "final_position_error_m": 7.346963316188659e-05,
+      "terminal_attitude_error_deg": 0.00010051320482210144,
+      "height_range_m": [
+        0.4685594944559419,
+        1.729215196819353
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.5008610964287268,
+        "max": 12.69522198708728
+      },
+      "case": "nominal",
+      "options": [],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.009530513804415287,
+      "final_speed_m_s": 2.4669608527609786e-05,
+      "final_body_rate_rad_s": [
+        6.79832007108496e-05,
+        -0.00023731062968703696,
+        2.759521010956504e-07
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1279.8795295649961,
+        1731.3647558544526
+      ]
+    },
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 466,
+      "pitch_turns": 1.0000009930788287,
+      "inversions": 1,
+      "position_RMSE_m": 0.005452043988123976,
+      "final_position_error_m": 7.078850427360755e-05,
+      "terminal_attitude_error_deg": 0.000347551742834869,
+      "height_range_m": [
+        0.4653697963266468,
+        1.730381791359717
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.0831158957444138,
+        "max": 12.101067986804992
+      },
+      "case": "reverse",
+      "options": [
+        "--direction",
+        "-1"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.008953424137019115,
+      "final_speed_m_s": 0.0001456490885233569,
+      "final_body_rate_rad_s": [
+        -2.890746350230349e-05,
+        0.00010017551582876057,
+        1.2174198744536191e-07
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1265.8624666994444,
+        1728.6838761433978
+      ]
+    },
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 573,
+      "pitch_turns": 2.9999994225179707,
+      "inversions": 3,
+      "position_RMSE_m": 0.006360709264996175,
+      "final_position_error_m": 6.533110186070466e-05,
+      "terminal_attitude_error_deg": 0.00019392044129051483,
+      "height_range_m": [
+        0.4681409994933631,
+        1.734813916083891
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.147282853489741,
+        "max": 12.994066026294604
+      },
+      "case": "three_flips",
+      "options": [
+        "--laps",
+        "3"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.008919616204778746,
+      "final_speed_m_s": 5.2364286936944156e-06,
+      "final_body_rate_rad_s": [
+        -1.897723897375673e-05,
+        6.666623408192241e-05,
+        9.860084364062138e-08
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1279.8801652766215,
+        1743.9521363842316
+      ]
+    },
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 466,
+      "pitch_turns": 0.999999271433383,
+      "inversions": 1,
+      "position_RMSE_m": 0.005922465678142416,
+      "final_position_error_m": 2.1071558120114183e-05,
+      "terminal_attitude_error_deg": 0.0003029427867471319,
+      "height_range_m": [
+        0.46850068109226073,
+        1.729274104220234
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.0861400980502367,
+        "max": 12.565469980472699
+      },
+      "case": "comp100",
+      "options": [
+        "--compensation",
+        "100"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.009511475132883335,
+      "final_speed_m_s": 7.769597979869578e-05,
+      "final_body_rate_rad_s": [
+        3.747134228140872e-05,
+        -0.00013076615813207415,
+        3.1245989778733965e-07
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1280.0667624861028,
+        1732.3881505465065
+      ]
+    },
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 466,
+      "pitch_turns": 0.999999343160168,
+      "inversions": 1,
+      "position_RMSE_m": 0.006103814421667258,
+      "final_position_error_m": 8.137263498042828e-05,
+      "terminal_attitude_error_deg": 0.00022395367211579262,
+      "height_range_m": [
+        0.47228261228794866,
+        1.729871826083622
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.1855521617690112,
+        "max": 12.179028009995818
+      },
+      "case": "rate_1p5",
+      "options": [
+        "--rate-scale",
+        "1.5"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.009491358811775307,
+      "final_speed_m_s": 8.222330114513791e-05,
+      "final_body_rate_rad_s": [
+        4.684042600595046e-05,
+        -0.00016314334990270057,
+        2.4388984741957843e-07
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1299.6365697649662,
+        1726.6561703214975
+      ]
+    },
+    {
+      "success": false,
+      "failure": "terminal_recovery_criteria",
+      "ticks": 466,
+      "pitch_turns": 0.9754718969461722,
+      "inversions": 1,
+      "position_RMSE_m": 0.016218700327167927,
+      "final_position_error_m": 0.022522520523219486,
+      "terminal_attitude_error_deg": 24.355135618881533,
+      "height_range_m": [
+        0.4706159568436445,
+        1.7311312062997557
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.5279405124601908,
+        "max": 13.241690001450479
+      },
+      "case": "rate_2",
+      "options": [
+        "--rate-scale",
+        "2"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.018245168888796643,
+      "final_speed_m_s": 0.09697405245120976,
+      "final_body_rate_rad_s": [
+        1.2784873012673614,
+        -0.34351250745648026,
+        -0.045300113258746104
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1055.945,
+        1727.9411377252015
+      ]
+    },
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 466,
+      "pitch_turns": 1.000023468326873,
+      "inversions": 1,
+      "position_RMSE_m": 0.005969617220647109,
+      "final_position_error_m": 8.882609874766907e-05,
+      "terminal_attitude_error_deg": 0.008524960163386153,
+      "height_range_m": [
+        0.4711488232666507,
+        1.7309384476149812
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.191615585412365,
+        "max": 12.51975999912247
+      },
+      "case": "motor_1p5",
+      "options": [
+        "--lag-scale",
+        "1.5"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.009606211623422421,
+      "final_speed_m_s": 6.039718438786174e-05,
+      "final_body_rate_rad_s": [
+        -0.0007249089438931104,
+        -0.00460286787758412,
+        2.799548639179505e-07
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1146.2582174052075,
+        1816.249341203438
+      ]
+    },
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 466,
+      "pitch_turns": 0.9999992710505108,
+      "inversions": 1,
+      "position_RMSE_m": 0.008199033887320661,
+      "final_position_error_m": 7.556945641639132e-05,
+      "terminal_attitude_error_deg": 0.00025109622869846817,
+      "height_range_m": [
+        0.4675335013058243,
+        1.7245384977229827
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.4669561918708505,
+        "max": 12.762190017383546
+      },
+      "case": "delay20",
+      "options": [
+        "--delay-ticks",
+        "1"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.013136444308798682,
+      "final_speed_m_s": 0.00028319551793899484,
+      "final_body_rate_rad_s": [
+        5.648460455341998e-05,
+        -0.0001949988730365168,
+        -2.5278203176262773e-07
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1292.243605123612,
+        1730.1432275443367
+      ]
+    },
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 466,
+      "pitch_turns": 1.0000070589404184,
+      "inversions": 1,
+      "position_RMSE_m": 0.010590635525974019,
+      "final_position_error_m": 8.429930040271539e-05,
+      "terminal_attitude_error_deg": 0.002670019603757901,
+      "height_range_m": [
+        0.4668334636462964,
+        1.7164915027329375
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.8341208473430015,
+        "max": 13.440636015729979
+      },
+      "case": "delay40",
+      "options": [
+        "--delay-ticks",
+        "2"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.01694864656770203,
+      "final_speed_m_s": 0.0007611616951747543,
+      "final_body_rate_rad_s": [
+        -0.00048108031100692247,
+        0.0017082250810688093,
+        -2.8513222483001304e-06
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1299.652186956138,
+        1728.2374580945311
+      ]
+    },
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 466,
+      "pitch_turns": 1.0000062519990185,
+      "inversions": 1,
+      "position_RMSE_m": 0.011901144588923928,
+      "final_position_error_m": 0.009955699386299335,
+      "terminal_attitude_error_deg": 0.0005084815708713245,
+      "height_range_m": [
+        0.4583185174754952,
+        1.717600861829587
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.0929883574135602,
+        "max": 12.556150002637878
+      },
+      "case": "force_minus10",
+      "options": [
+        "--force-scale",
+        ".9"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.014923220686971975,
+      "final_speed_m_s": 9.753947682666424e-05,
+      "final_body_rate_rad_s": [
+        -6.510003660320542e-05,
+        0.0002284621617492506,
+        -4.7429943358327844e-07
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1301.1847584619252,
+        1771.7820818363111
+      ]
+    },
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 466,
+      "pitch_turns": 1.0000004857364637,
+      "inversions": 1,
+      "position_RMSE_m": 0.005762593463487366,
+      "final_position_error_m": 7.535412005222075e-05,
+      "terminal_attitude_error_deg": 0.00020018814785899584,
+      "height_range_m": [
+        0.4698172145316673,
+        1.7297386006825712
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.1073532325099227,
+        "max": 12.393673008773476
+      },
+      "case": "inertia_plus20",
+      "options": [
+        "--inertia-scale",
+        "1.2"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.009147605903020448,
+      "final_speed_m_s": 2.7223408503059765e-05,
+      "final_body_rate_rad_s": [
+        1.0817888810434645e-05,
+        -3.709958040563825e-05,
+        -4.697907599291666e-08
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1284.1517024071406,
+        1722.4053990305515
+      ]
+    },
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 466,
+      "pitch_turns": 1.0000002212991923,
+      "inversions": 1,
+      "position_RMSE_m": 0.005942217674869922,
+      "final_position_error_m": 3.169522734064597e-05,
+      "terminal_attitude_error_deg": 0.0001219535371446577,
+      "height_range_m": [
+        0.46852526404499806,
+        1.7292360958180133
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.119790886878036,
+        "max": 12.223245983477682
+      },
+      "case": "voltage12p6",
+      "options": [
+        "--voltage",
+        "12.6",
+        "--cells",
+        "3"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.00954499469777555,
+      "final_speed_m_s": 0.00011293915257005815,
+      "final_body_rate_rad_s": [
+        -5.8351583685072495e-05,
+        0.0002046104848957889,
+        -1.6898276460073902e-07
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1331.0593792200048,
+        1864.0292746080634
+      ]
+    },
+    {
+      "success": true,
+      "failure": null,
+      "ticks": 466,
+      "pitch_turns": 1.0000003194833496,
+      "inversions": 1,
+      "position_RMSE_m": 0.005925829223012197,
+      "final_position_error_m": 4.760637273660473e-05,
+      "terminal_attitude_error_deg": 0.00015777430805722053,
+      "height_range_m": [
+        0.4684869342050006,
+        1.729250413704069
+      ],
+      "motor_command_support_clipped_inner_updates": 0,
+      "mpc_time_ms": {
+        "p99": 1.1108145481557588,
+        "max": 12.763154023559764
+      },
+      "case": "voltage16",
+      "options": [
+        "--voltage",
+        "16"
+      ],
+      "returncode": 0,
+      "moving_position_RMSE_m": 0.00951877754017684,
+      "final_speed_m_s": 0.00011400007193369165,
+      "final_body_rate_rad_s": [
+        4.9650268927683e-05,
+        -0.00017297335006719971,
+        1.6046567922510676e-07
+      ],
+      "all_recorded_rotor_commands_within_measured_support": true,
+      "motor_command_range_counts": [
+        1258.0349075774031,
+        1671.1103917690637
+      ]
+    }
+  ],
+  "source_conformance": {
+    "status": "passed",
+    "firmware_reference_commit": "4adbd3ef7cb546947600e5f747bd5453c9573063",
+    "source_hashes_verified": 9,
+    "C_reference_external_count_max_error": 0.0001953124997271516,
+    "inverse_roundtrip_max_force_error_N": 0.062244878359543065,
+    "inverse_error_interpretation": "Bounded by one half of largest adjacent integer-RC force increment; not model-identification error",
+    "ACTUAL_rate_mapping_600deg_s_linear_checked_against_C": true,
+    "native_mass_inertia_and_torque_acceleration": true,
+    "hover_trim_force_moment": [
+      7.023959999993195,
+      1.3092305017892159e-13,
+      3.876066134722578e-14,
+      -3.721675745360642e-13
+    ],
+    "scope": "Source-derived restricted steady mapping and numeric plant checks; not an installed-firmware or closed-loop flight validation"
+  },
+  "nominal": {
+    "moving_RMSE_m": 0.009530513804415287,
+    "whole_mission_RMSE_m": 0.005934500039446829,
+    "height_range_m": [
+      0.4685594944559419,
+      1.729215196819353
+    ],
+    "peak_body_pitch_rate_rad_s": 8.813001844824031,
+    "actual_collective_force_range_N": [
+      5.759083538825804,
+      20.79777018976007
+    ],
+    "RC_throttle_range": [
+      1322,
+      1699
+    ]
+  },
+  "evidence_directory": "build/raven_flip_verified_20261024",
+  "model_directory": "build/raven_model",
+  "scope": "Native MuJoCo and ideal state/force feedback; assumed PI rate controller; no installed Betaflight or physical flight validation",
+  "parameter_hashes": {
+    "parameters/inertial_model.json": "10fe6bcbbead5020d545537163d1f92ad9b59ad15182fcb9e317de67aa1d0252",
+    "parameters/static_models.json": "b90da27bdef4343b5bbc609319770639c285abcbbb5167d01740635dee6474f1",
+    "parameters/dynamic_models.json": "2bd6fc7c98e07564ebe69cc8769b9e87158e9adfaff8468654042bba104a4896"
+  },
+  "checked_in_models": {
+    "URDF": "models/raven.urdf",
+    "MJCF": "models/raven.xml",
+    "MPC_config": "parameters/mpc_simulation.json",
+    "provenance": "data/provenance/simulation_model.json"
+  }
+}

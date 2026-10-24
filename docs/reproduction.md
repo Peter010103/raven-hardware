@@ -11,7 +11,7 @@ python tools/inertia/analyze.py
 python tools/plot_models.py
 ```
 
-Validation checks packaged hashes, documentation links, held-out actuator predictions, domain rejection, analytic delayed speed response, and the inertia recovered from original selected poses. The default build never edits packaged measurements or parameters. Recomputed outputs are written under ignored `build/`.
+Validation checks packaged hashes, documentation links, robot-description mass/inertia and frames, held-out actuator predictions, domain rejection, analytic delayed speed response, and the inertia recovered from original selected poses. The default build never edits packaged measurements or parameters. Recomputed outputs are written under ignored `build/`.
 
 `plot_models.py` regenerates the six actuator figures and four inertia figures from packaged datasets and the compact preview mesh. It needs no ROS, hardware, original workspace, CAD SDK, source CAD archive, or proprietary fonts. Avenir is used when installed under the user's font directory; DejaVu Sans is the portable fallback. Curves and text are vector SVG; 3D mesh/surface raster layers and the CAD PNG use 900 dpi.
 
@@ -44,3 +44,14 @@ python tools/view_thrust_surface.py --save build/thrust-surface.png
 ```
 
 The window supports normal Matplotlib 3D rotation and zoom. Unsupported parts of the command–voltage plane are masked. This tool displays direct motor command and delivered voltage, not a speed–voltage or RC-throttle surface.
+
+## Robot descriptions and flip simulation
+
+The [technical notes](technical-notes.md) describe the checked-in `models/raven.urdf` and `models/raven.xml`. With the additional [simulation dependencies](../simulation/README.md#reproduce), regenerate their layout with:
+
+```sh
+python tools/build_models.py
+python tools/validate_repo.py
+```
+
+This explicit export writes robot files into `models/`, MPC configuration into `parameters/`, and model provenance into `data/provenance/`; prediction plots remain in `build/`. It preserves canonical measured parameters. Review any changed generated files before using `--refresh-manifest`. See the [simulation guide](../simulation/README.md) for the offline MPC screen and its assumptions.

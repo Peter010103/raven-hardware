@@ -6,4 +6,6 @@ The Raven measurements, parameters, documentation and original tools are curated
 
 The approximate CAD was supplied as `TBS_SO_v3_RPi_v2.usdz` and `.f3z`. The compact preview geometry and derived images retain that provenance. Source CAD authorship and redistribution terms have not been established here; no ownership or manufacturer endorsement is claimed. Original CAD archives and third-party SDK sources are not included.
 
+The simulation controller and run-in reference adapt local Sanity MPC software from `loco_mjx/experiments/sanity_pitch_mpc/`; original paths and source hashes are recorded in [simulation/source_provenance.json](simulation/source_provenance.json). Betaflight reference sources are fetched separately at a pinned revision and are not vendored here.
+
 Python dependencies are installed separately and retain their own licences.

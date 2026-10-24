@@ -1,0 +1,39 @@
+<robot name="raven_candidate">
+  <link name="COM">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.716" />
+      <inertia ixx="0.0020581804585960302" iyy="0.0017673633156382574" izz="0.0031496362931102938" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+  </link>
+  <link name="marker_centroid" />
+  <joint name="marker_reference" type="fixed">
+    <parent link="COM" />
+    <child link="marker_centroid" />
+    <origin xyz="0.003000156283378601 0.0010000002384185792 0.001688334429264067" />
+  </joint>
+  <link name="rotor_0" />
+  <joint name="rotor_fixed_0" type="fixed">
+    <parent link="COM" />
+    <child link="rotor_0" />
+    <origin xyz="-0.0657433437166214 -0.08868999976158143 0.03168833442926407" />
+  </joint>
+  <link name="rotor_1" />
+  <joint name="rotor_fixed_1" type="fixed">
+    <parent link="COM" />
+    <child link="rotor_1" />
+    <origin xyz="0.0717436562833786 -0.08868999976158143 0.03168833442926407" />
+  </joint>
+  <link name="rotor_2" />
+  <joint name="rotor_fixed_2" type="fixed">
+    <parent link="COM" />
+    <child link="rotor_2" />
+    <origin xyz="0.0717436562833786 0.09069000023841858 0.03168833442926407" />
+  </joint>
+  <link name="rotor_3" />
+  <joint name="rotor_fixed_3" type="fixed">
+    <parent link="COM" />
+    <child link="rotor_3" />
+    <origin xyz="-0.0657433437166214 0.09069000023841858 0.03168833442926407" />
+  </joint>
+</robot>

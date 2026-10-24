@@ -1,0 +1,68 @@
+{
+  "scope": "SIMULATION CANDIDATE: measured static/dynamic rotor model and adopted suspended-configuration inertia; unknown rate loop",
+  "mass_kg": 0.716,
+  "COM_relative_marker_reference_m": [
+    -0.003000156283378601,
+    -0.0010000002384185792,
+    -0.001688334429264067
+  ],
+  "root_frame": "Adopted COM, axes Xforward,Yleft,Zup",
+  "rotor_centres_relative_COM_m": [
+    [
+      -0.0657433437166214,
+      -0.08868999976158143,
+      0.03168833442926407
+    ],
+    [
+      0.0717436562833786,
+      -0.08868999976158143,
+      0.03168833442926407
+    ],
+    [
+      0.0717436562833786,
+      0.09069000023841858,
+      0.03168833442926407
+    ],
+    [
+      -0.0657433437166214,
+      0.09069000023841858,
+      0.03168833442926407
+    ]
+  ],
+  "rotor_geometry": "Approximate supplied CAD centres X\u00b168.7435mm/Y\u00b189.69mm; Z30mm display placement, unmeasured. Parallel-Z thrust gives no rZ moment contribution.",
+  "rotor_body_yaw_signs_assumed": [
+    -1,
+    1,
+    -1,
+    1
+  ],
+  "rate_prior_time_constants_s": [
+    0.04,
+    0.04,
+    0.08
+  ],
+  "motor_speed_tau_s": 0.02189140910403713,
+  "motor_speed_delay_s": 0.0017634598349229545,
+  "hover_trim_external_counts": [
+    1381.048204949162,
+    1363.551251189724,
+    1358.9962983073308,
+    1376.6261255265144
+  ],
+  "hover_trim_wrench": [
+    7.023959999993195,
+    1.3092305017892159e-13,
+    3.876066134722578e-14,
+    -3.721675745360642e-13
+  ],
+  "parameter_SHA256": {
+    "parameters/inertial_model.json": "10fe6bcbbead5020d545537163d1f92ad9b59ad15182fcb9e317de67aa1d0252",
+    "parameters/static_models.json": "b90da27bdef4343b5bbc609319770639c285abcbbb5167d01740635dee6474f1",
+    "parameters/dynamic_models.json": "2bd6fc7c98e07564ebe69cc8769b9e87158e9adfaff8468654042bba104a4896"
+  },
+  "no_battery_sag_identification": true,
+  "installation_and_CW_prop_transfer": "Assumed unity; not empirically fitted",
+  "native_XML": "models/raven.xml",
+  "URDF": "models/raven.urdf",
+  "MPC_config": "parameters/mpc_simulation.json"
+}
