@@ -1,0 +1,26 @@
+{
+  "heldout_RMSE": {
+    "simple": {
+      "omega": 32.99970603466936,
+      "T_N": 0.17972922327447527,
+      "Q_Nm": 0.0026030221225192295
+    },
+    "physics": {
+      "omega": 11.037805150075066,
+      "T_N": 0.04078118482821543,
+      "Q_Nm": 0.0005216142077234674
+    },
+    "surface": {
+      "omega": 11.037805150075066,
+      "T_N": 0.03708287308154347,
+      "Q_Nm": 0.00046557617463858353
+    }
+  },
+  "checks": [
+    "Surface API matches all saved heldout predictions",
+    "STOP equilibrium is zero",
+    "Unsupported points rejected",
+    "Dynamic implementation matches delayed analytic first-order response at 1ms and 10ms dt",
+    "Optional acceleration reaction can reverse sign during braking"
+  ]
+}

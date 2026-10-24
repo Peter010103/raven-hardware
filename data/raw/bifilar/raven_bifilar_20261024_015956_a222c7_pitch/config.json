@@ -1,0 +1,40 @@
+{
+  "vehicle": "Raven",
+  "axis": "pitch",
+  "intended_vertical_body_axis": "Y",
+  "tracked_frame": "RigidBody_raven",
+  "parent_frame": "map",
+  "world_vertical_axis": "Z",
+  "measurement_inputs": {
+    "mass_g": null,
+    "length_cm": null,
+    "top_cm": null,
+    "bottom_cm": null
+  },
+  "geometry": null,
+  "missing_for_combined_inertia": [
+    "mass_g",
+    "length_cm",
+    "top_cm",
+    "bottom_cm"
+  ],
+  "countdown_s": 10,
+  "record_duration_s": 45,
+  "fit_start_s_after_cue": 5,
+  "setup_label": "",
+  "requested_fit_end_s_after_cue": null,
+  "frequency_search_hz": [
+    0.05,
+    5.0
+  ],
+  "zoom_window_s_after_cue": [
+    0,
+    12
+  ],
+  "marker_from_body_xyzw": null,
+  "marker_to_drone_orientation_confirmed": false,
+  "body_axis_vertical_confirmation": "Operator levels body manually; no assumed marker/body transform",
+  "collection_only": false,
+  "control_publishers_started": false,
+  "shared_acquisition_source_sha256": "15c00f5cbdee89fe9ea84020e9ee03accf4b9eddc75e79ef6046442b109ec733"
+}

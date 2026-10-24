@@ -1,0 +1,76 @@
+{
+  "paired_selection_baselines": {
+    "first": 0.7141408793317963,
+    "two_pole": 0.7141643267713972,
+    "damped": 0.6662096741266189
+  },
+  "kind": "aerodynamic_torque_plus_acceleration_reaction_with_measurement_filter",
+  "equation": "Q_input = kQ*omega^2 + J_effective*domega/dt; Q_observed = first_order_filter(Q_input, tau_sensor, delay)",
+  "kQ": 1.8545869060237172e-08,
+  "J_effective_kg_m2": 5.117708466922318e-06,
+  "measurement_delay_s": 0.02331982677080073,
+  "measurement_tau_s": 0.01095362877953979,
+  "motor_tau_s_fixed": 0.02189140910403713,
+  "paired_steps": 227,
+  "n_fit": 180,
+  "n_selection": 47,
+  "selection_RMSE_fraction": 0.20753678338868425,
+  "fit_RMSE_fraction": 0.1930231605236188,
+  "limits": "Effective acceleration-reaction coefficient only, conditional on torque gain, fixed speed-lag model and first-order measurement path. Not an independently calibrated rotor moment of inertia. Does not identify free-flight yaw inertia, cross-axis rig motion or electrical power returned to supply.",
+  "sequence_scores": [
+    {
+      "run": "20261023T020605Z_F_validation_11_1V_r1_a1",
+      "n": 34576,
+      "RMSE_Nm": 0.003962196701851703,
+      "heldout_voltage": false
+    },
+    {
+      "run": "20261023T024026Z_F_validation_16V_r1_a1",
+      "n": 35057,
+      "RMSE_Nm": 0.004373328382917787,
+      "heldout_voltage": true
+    },
+    {
+      "run": "20261023T021450Z_F_validation_12V_r1_a2",
+      "n": 35103,
+      "RMSE_Nm": 0.004062236312546573,
+      "heldout_voltage": true
+    },
+    {
+      "run": "20261023T023330Z_F_validation_11_1V_r2_a7",
+      "n": 34722,
+      "RMSE_Nm": 0.003966335133259411,
+      "heldout_voltage": false
+    },
+    {
+      "run": "20261023T024643Z_F_validation_16_8V_r1_a1",
+      "n": 8121,
+      "RMSE_Nm": 0.002600291390417433,
+      "heldout_voltage": false
+    },
+    {
+      "run": "20261023T024434Z_F_validation_16V_r2_a4",
+      "n": 33989,
+      "RMSE_Nm": 0.0042239326963543775,
+      "heldout_voltage": true
+    },
+    {
+      "run": "20261023T021659Z_F_validation_12V_r2_a1",
+      "n": 34074,
+      "RMSE_Nm": 0.004286043961514562,
+      "heldout_voltage": true
+    },
+    {
+      "run": "20261023T023817Z_F_validation_14_8V_r2_a7",
+      "n": 34996,
+      "RMSE_Nm": 0.004326589724643852,
+      "heldout_voltage": false
+    },
+    {
+      "run": "20261023T021908Z_F_validation_14_8V_r1_a1",
+      "n": 35076,
+      "RMSE_Nm": 0.004262064118008458,
+      "heldout_voltage": false
+    }
+  ]
+}

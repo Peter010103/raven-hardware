@@ -1,0 +1,107 @@
+{
+  "geometry_source": "Operator measurements supplied2026-10-24; strings assumed equal loaded free lengths, spacings are full contact distances.",
+  "pose_treatment": "Use complete recorded quaternions and average per-sample n_B tensor projection coefficients, with the operator-supplied180deg X transform.",
+  "frame_registration_status": "operator-described X alignment and180deg rotation about drone X; not a measured six-DOF CAD registration",
+  "marker_point_table_vs_pose_basis": "Supplied marker-table native axes remain explicit; no guessed extra swap is applied to recorded quaternions.",
+  "rows": [
+    {
+      "axis": "yaw",
+      "run": "raven_bifilar_20261024_013616_277be8_yaw",
+      "period_s": 1.3197442276613145,
+      "length_cm": 68.5,
+      "top_cm": 15.5,
+      "bottom_cm": 18.0,
+      "vertical_separation_m": 0.6848859394088916,
+      "I_combined_axis_per_total_mass_m2": 0.004405908109632546,
+      "body_axis_misalignment_deg_under_operator_transform": 2.7517217015495583,
+      "vertical_direction_body": [
+        -0.0459149318623812,
+        -0.014021442539381935,
+        -0.9988469443218955
+      ],
+      "projection_coefficients_Ixx_Iyy_Izz_Ixy_Ixz_Iyz": [
+        0.002113070966781002,
+        0.00019977767122893972,
+        0.9976871513619916,
+        0.0012802775380776955,
+        0.09172288897338472,
+        0.02801056795335041
+      ],
+      "total_suspended_mass_kg": 0.716,
+      "combined_inertia_kg_m2": 0.0031546302064969028,
+      "drone_COM_inertia_kg_m2": null
+    },
+    {
+      "axis": "pitch",
+      "run": "raven_bifilar_20261024_015956_a222c7_pitch",
+      "period_s": 1.254783948096704,
+      "length_cm": 67.0,
+      "top_cm": 15.5,
+      "bottom_cm": 11.0,
+      "vertical_separation_m": 0.6696220949162297,
+      "I_combined_axis_per_total_mass_m2": 0.0024893636866044895,
+      "body_axis_misalignment_deg_under_operator_transform": 2.7065468832171153,
+      "vertical_direction_body": [
+        -0.012384512534642242,
+        0.9988844858380762,
+        -0.04556761790220668
+      ],
+      "projection_coefficients_Ixx_Iyy_Izz_Ixy_Ixz_Iyz": [
+        0.00016849389470113358,
+        0.997733894782607,
+        0.0020976113226922376,
+        -0.02473961484013451,
+        0.0011388242531099894,
+        -0.09102815695297725
+      ],
+      "total_suspended_mass_kg": 0.716,
+      "combined_inertia_kg_m2": 0.0017823843996088145,
+      "drone_COM_inertia_kg_m2": null
+    },
+    {
+      "axis": "roll",
+      "run": "raven_bifilar_20261024_014956_52516e_roll",
+      "period_s": 1.2272857988148942,
+      "length_cm": 68.0,
+      "top_cm": 15.5,
+      "bottom_cm": 14.0,
+      "vertical_separation_m": 0.6799586384479575,
+      "I_combined_axis_per_total_mass_m2": 0.002984891278423817,
+      "body_axis_misalignment_deg_under_operator_transform": 9.799177280722,
+      "vertical_direction_body": [
+        0.9854103424473712,
+        -0.0709166262960762,
+        -0.1547168029418181
+      ],
+      "projection_coefficients_Ixx_Iyy_Izz_Ixy_Ixz_Iyz": [
+        0.9709782379847871,
+        0.0050465517748291356,
+        0.023975210240382634,
+        -0.13975232796661408,
+        -0.30488857124956725,
+        0.021949466439697984
+      ],
+      "total_suspended_mass_kg": 0.716,
+      "combined_inertia_kg_m2": 0.0021371821553514527,
+      "drone_COM_inertia_kg_m2": null
+    }
+  ],
+  "COM_observation_pending": false,
+  "notes": [
+    "Multiply the listed I/m coefficient by total suspended mass in kg to obtain combined axis inertia under the symmetric bifilar model.",
+    "This is about the actual suspension axis, not automatically the body COM/principal axis.",
+    "Apply fixture and marker inertia, COM offset and tilted-axis tensor correction in a common reference frame.",
+    "MarkersM3\u2013M6 centroid defines model reference per operator; it is not a measured COM."
+  ],
+  "COM_observation": {
+    "COM_from_FC_body_mm": [
+      0,
+      0,
+      -25
+    ],
+    "source": "Operator-estimated, confirmed2026-10-24",
+    "actual_FC_position_in_registered_body_frame_pending": true,
+    "used_for_parallel_axis_correction": false
+  },
+  "total_suspended_mass_kg": 0.716
+}

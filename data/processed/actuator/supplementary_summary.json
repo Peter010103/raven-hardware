@@ -1,0 +1,19 @@
+{
+  "electrical_path": {
+    "fit": "V_source - V_FC = offset + R_effective * I_source",
+    "R_effective_ohm": 0.052891122755896046,
+    "offset_V": -0.07497414973443907,
+    "RMSE_V": 0.02918486549227803,
+    "warning": "Apparent source-to-FC path includes measurement offsets, load-dependent leads/connectors, supply and FC filtering. Not a four-wire resistance measurement or battery sag model."
+  },
+  "vibration": {
+    "n_plateaus": 305,
+    "method": "Welch 2048 samples, longest contiguous late-plateau segment; gyro XYZ summed PSD; high-resolution scale corrected; no interpolation across missing frames.",
+    "scope": "FC mounted on the bench/rig; not a free-flight structural vibration survey."
+  },
+  "sequence_validation": {
+    "successful_runs": 9,
+    "method": "No F-sequence fitting. Use recorded FC motor command and filtered delivered bus voltage; compare inside static convex hull after 0.3s continuous rotation. RPM models trained on E; force/torque models include measurement path.",
+    "clock_limit": "Affine edge registration cannot separate fixed host-to-FC latency. RPM timing uses same FC clock."
+  }
+}

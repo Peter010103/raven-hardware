@@ -1,0 +1,41 @@
+{
+  "scenarios": [
+    {
+      "roll_front": true,
+      "pitch_left": true,
+      "diagonal_inertia_kg_m2": [
+        0.0020581804585960302,
+        0.0017673633156382574,
+        0.003149636293110294
+      ]
+    },
+    {
+      "roll_front": true,
+      "pitch_left": false,
+      "diagonal_inertia_kg_m2": [
+        0.0020582325305318065,
+        0.0017573354358986573,
+        0.0031496381908141624
+      ]
+    },
+    {
+      "roll_front": false,
+      "pitch_left": true,
+      "diagonal_inertia_kg_m2": [
+        0.0020351268238540847,
+        0.0017673671062065318,
+        0.0031496851192467385
+      ]
+    },
+    {
+      "roll_front": false,
+      "pitch_left": false,
+      "diagonal_inertia_kg_m2": [
+        0.0020351788957898606,
+        0.0017573392264669317,
+        0.0031496870169506063
+      ]
+    }
+  ],
+  "scope": "Geometric side-choice scenarios only, not statistical confidence bounds."
+}

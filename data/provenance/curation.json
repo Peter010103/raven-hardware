@@ -1,0 +1,30 @@
+{
+  "curated_on": "2026-10-24",
+  "scope": "Raven one-motor ACW identification and adopted 716g inertial configuration",
+  "original_archives": [
+    "Raven/actuator_modelling",
+    "Raven/inertia_measurements"
+  ],
+  "offline_reproduction": "Packaged data and compact geometry; no paths to the original workspace are used by tools.",
+  "reference_repository": {
+    "path": "Sanity/sanity-hardware",
+    "HEAD": "51beff52926904ad36476372df655226bc50f288",
+    "shared_fitter_source_SHA256": "15c00f5cbdee89fe9ea84020e9ee03accf4b9eddc75e79ef6046442b109ec733",
+    "note": "Working-tree fitter was imported, including its explicit frequency-bound support; source hash identifies exact code."
+  },
+  "excluded": [
+    "Original PDFs",
+    "Blackbox BFL files and decoded raw arrays",
+    "Full raw motor campaigns",
+    "USDZ/F3Z sources",
+    "Virtual environments",
+    "Hardware-control and network configuration scripts"
+  ],
+  "parameter_integrity": "Canonical actuator coefficients are copied from the selected source models; adopted COM and inertia are retained at full precision.",
+  "path_adaptations": [
+    "raven_actuator.py loads parameters/ rather than its original analysis/models directory",
+    "Inertial parameter links point to packaged relative paths",
+    "The shared fitter is vendored locally with its MIT notice",
+    "Static refitting reads packaged data and writes build/refit/"
+  ]
+}

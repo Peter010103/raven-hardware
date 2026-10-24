@@ -1,0 +1,66 @@
+{
+  "vehicle": "Raven",
+  "tracked_frame": "RigidBody_raven",
+  "parent_frame": "map",
+  "world_vertical_axis": "Z",
+  "mass_g": 716.0,
+  "drone_mass_g": null,
+  "fixture_mass_g": null,
+  "geometry_by_axis": {
+    "yaw": {
+      "length_cm": 68.5,
+      "top_cm": 15.5,
+      "bottom_cm": 18.0
+    },
+    "roll": {
+      "length_cm": 68.0,
+      "top_cm": 15.5,
+      "bottom_cm": 14.0
+    },
+    "pitch": {
+      "length_cm": 67.0,
+      "top_cm": 15.5,
+      "bottom_cm": 11.0
+    }
+  },
+  "notes": [
+    "mass_g means the complete suspended assembly, including battery, fixture and markers.",
+    "length_cm means actual loaded free string length; top_cm/bottom_cm are full contact spacings.",
+    "Equal-length uncrossed strings, aligned upper/lower midpoints, small-angle torsion assumed.",
+    "Body axis is aligned vertically by the operator; the Motive marker axes need not match body axes.",
+    "No Sanity mass, fixture correction, centre-of-mass location or geometry is inherited.",
+    "Raw Motive marker UI coordinates are retained separately from ROS/TF pose coordinates; do not apply a guessed Y/Z swap to captured quaternions."
+  ],
+  "marker_from_body_xyzw": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "marker_to_drone_orientation_confirmed": true,
+  "cad_reference_manifest": "../data/provenance/external_cad.json",
+  "registration_status": "operator-described X alignment and180deg rotation about drone X; not a measured six-DOF CAD registration",
+  "registration_source": "Operator statement on2026-10-24: mocap rigid-body X faces the drone front; remaining axes rotated180deg about drone X.",
+  "COM_from_FC_body_mm": [
+    0.0,
+    0.0,
+    -25.0
+  ],
+  "COM_reference_status": "Operator-adopted CAD FC minus25mm body-Z as final working reference; uncertainty unquantified",
+  "FC_position_body_mm": null,
+  "mass_source": "Operator reported716g in response to total suspended mass question2026-10-24",
+  "operator_visual_orientation_confirmed": true,
+  "adopted_inertia_reference": "CAD_FC_minus25mm_body_Z",
+  "COM_position_body_mm": [
+    -3.000156283378601,
+    -1.000000238418579,
+    -1.6883344292640672
+  ],
+  "inertia_model_selection": "inertia_selection.json",
+  "fixture_geometry": "fixture_geometry.json",
+  "lower_fixture_rectangle_body_mm": [
+    110,
+    140
+  ],
+  "lower_fixture_depth_below_arm_mm": 10
+}

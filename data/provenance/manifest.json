@@ -1,0 +1,392 @@
+{
+  "schema_version": 1,
+  "hash": "SHA256",
+  "scope": "Packaged immutable evidence, canonical parameters and curated media; generated build/ is excluded",
+  "files": [
+    {
+      "path": "data/README.md",
+      "bytes": 2404,
+      "sha256": "dfbbbdebf5bcd472662292ca9f17d02f2676d3437d2a86481387e2e66bcd3c3c"
+    },
+    {
+      "path": "data/calibration/torque_calibration.json",
+      "bytes": 5342,
+      "sha256": "eb7a6c0515a5d263f73a65397f91b3a93b8022daa44f19c929072147c743ed13"
+    },
+    {
+      "path": "data/processed/actuator/cross_phase_checks.json",
+      "bytes": 1000,
+      "sha256": "39d38607fa418ad50ee4ce011b6f3e7c8820fece658ff9186548f0c8586f8438"
+    },
+    {
+      "path": "data/processed/actuator/plateaus.csv",
+      "bytes": 281082,
+      "sha256": "52bf2d139803e945166ca0340db12ac2cfbc2f678e85c68d6148013b2b63eeef"
+    },
+    {
+      "path": "data/processed/actuator/runtime_validation.json",
+      "bytes": 720,
+      "sha256": "2039bd022547a31d517667e8d9b6864c31c94210e8f0fe84e92dad7350ec2a72"
+    },
+    {
+      "path": "data/processed/actuator/sequence_validation.csv",
+      "bytes": 11051,
+      "sha256": "0447dcb2f80a726fc407c82b16cdeabf47741535b63814a6787dfca133daf2cd"
+    },
+    {
+      "path": "data/processed/actuator/static_enriched.csv",
+      "bytes": 136831,
+      "sha256": "531e36df3a2a5322c1fab5d59c1f6d9a386b7a3df9df799affd30c68b9800d5d"
+    },
+    {
+      "path": "data/processed/actuator/static_heldout_predictions.csv",
+      "bytes": 13136,
+      "sha256": "64e44b2b570f028a8720031ab637f2f841bfe873b18f4739344d5c8bcf117851"
+    },
+    {
+      "path": "data/processed/actuator/static_model_selection.csv",
+      "bytes": 876,
+      "sha256": "c64319ac58e21ba9ea46792ecd9a4f7372b217c064951a3b4ac5f088c7a63408"
+    },
+    {
+      "path": "data/processed/actuator/step_curves.npz",
+      "bytes": 1070428,
+      "sha256": "a1ee393b0c5f9b0352be75aae2fba04805244895c3c791a1b0f56a1fdd76bc19"
+    },
+    {
+      "path": "data/processed/actuator/step_metrics.csv",
+      "bytes": 308681,
+      "sha256": "de9a48d0aa80b2586ae5241c048826358774572456706ad61fd169ae123af4fb"
+    },
+    {
+      "path": "data/processed/actuator/supplementary_summary.json",
+      "bytes": 1134,
+      "sha256": "61defb465f2e37b57e1e57b9ed64604c3415edb14611b356aff304649dee8662"
+    },
+    {
+      "path": "data/processed/actuator/vibration.csv",
+      "bytes": 55116,
+      "sha256": "8ad6de51d67fb861565b04109b42dff9d08238dfea8a9d8ab55d75584bc8e190"
+    },
+    {
+      "path": "data/processed/actuator/vibration_psd.npz",
+      "bytes": 4678338,
+      "sha256": "a46587bea25ec3986ccd6c0008c6d93ed24de5540fe21dc26c4995840940c4ad"
+    },
+    {
+      "path": "data/processed/geometry/cad_preview.json",
+      "bytes": 753,
+      "sha256": "d36c0f200987a3be9976843f192639e9159741f230976a2ba208ca690492d060"
+    },
+    {
+      "path": "data/processed/geometry/cad_preview.npz",
+      "bytes": 1008459,
+      "sha256": "402bc9629796877ef7535b9ea876bff11a565433706c4ce56eaf982a9713638c"
+    },
+    {
+      "path": "data/processed/inertia/collection_review.json",
+      "bytes": 33182,
+      "sha256": "c9522b6af53b5bcd399c671a2e585e0335c647524898425fcbfad492652abc02"
+    },
+    {
+      "path": "data/processed/inertia/contact_edge_sensitivity.json",
+      "bytes": 910,
+      "sha256": "1b46d04f0a3db678f1366a6cc29ab264fc944345599f5561a46749bdf650a774"
+    },
+    {
+      "path": "data/processed/inertia/geometry_pose_summary.json",
+      "bytes": 4143,
+      "sha256": "59c8971454de0d5600e4372715636bc42924e78dfecc6d20eb7512dd60e6bda8"
+    },
+    {
+      "path": "data/processed/inertia/inertia_estimates.json",
+      "bytes": 5936,
+      "sha256": "78c61918bffcfdecc2b8a3933a245500e51f1b957a80fa3ef426ca00e5f12dce"
+    },
+    {
+      "path": "data/processed/inertia/inertia_validation.json",
+      "bytes": 709,
+      "sha256": "b981698b98f1b76938c70ea0c39d9e797e09efbecc8f2c8988d2e3ba8b24513b"
+    },
+    {
+      "path": "data/processed/inertia/oscillation_models.json",
+      "bytes": 4688,
+      "sha256": "34dc16b91d368fd86bc27ab029ba6107bb35bac6d6bdd561d708995009dabacd"
+    },
+    {
+      "path": "data/processed/inertia/recording_summary.csv",
+      "bytes": 1928,
+      "sha256": "02e867ae79760c565c1034d12d04691763ea7e8a74005200dd8e0aa802e77493"
+    },
+    {
+      "path": "data/processed/inertia/registration_preview.json",
+      "bytes": 2064,
+      "sha256": "1ba38e41037e44a8a4a3e38e59eb465c52640dd33a91e4d57f146706626a5879"
+    },
+    {
+      "path": "data/processed/inertia/window_audit.csv",
+      "bytes": 210567,
+      "sha256": "102d1442c73e8d8c5ae118318c3cd97a9777dc3b49e3a1994b0d070efcb47c94"
+    },
+    {
+      "path": "data/provenance/actuator_software_versions.json",
+      "bytes": 187,
+      "sha256": "c5b4135ed5cbe15a10c3307e766f03e1eebad474e059c502b824a18ea4c5c706"
+    },
+    {
+      "path": "data/provenance/curation.json",
+      "bytes": 1409,
+      "sha256": "51ee69aacc7eb8303d46000e558d2616b123c56b7fb3ce824e8a9c74d14b29d3"
+    },
+    {
+      "path": "data/provenance/external_cad.json",
+      "bytes": 1697,
+      "sha256": "82dad16ea3cf5dc944de7ae876ee52b76ec3a3a53cbb28e6bbfdc194be0e9dc3"
+    },
+    {
+      "path": "data/provenance/import_sources.json",
+      "bytes": 18415,
+      "sha256": "809f5b31f66df4b72f3789e66562c297f61bd1c13c4841c9b9465b60282e8c03"
+    },
+    {
+      "path": "data/provenance/natnet_marker_crosscheck.txt",
+      "bytes": 373,
+      "sha256": "b64087fd1c413b50ad2a1e06e4b8e4648e0ebba85e8552dd1a133967c3ecbcc5"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_012929_07d8a3_yaw/capture_receipt.json",
+      "bytes": 368,
+      "sha256": "2219c04b0f7813b6407a44d435d7875940dd4dbb6bc65300242d36ce73c3a288"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_012929_07d8a3_yaw/config.json",
+      "bytes": 978,
+      "sha256": "f4e0bfb9747c7d6fc09345fd47c75b8210ff04947e11340c1a1970569aa53d5d"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_012929_07d8a3_yaw/measurement_update.json",
+      "bytes": 585,
+      "sha256": "9342980f8a05621c5f8dd4be9cbae3b4df5d9d9e4c95819014305439d1632e28"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_012929_07d8a3_yaw/poses.csv",
+      "bytes": 2158973,
+      "sha256": "4ec39909d8175c0d09275abac813039d5c2498d3977bafe650d129bfbdfaa37a"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_013301_d33219_yaw/capture_receipt.json",
+      "bytes": 369,
+      "sha256": "def1697635613bb77fa885198954074402374b0fde3ebe4c28a69431099e122d"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_013301_d33219_yaw/config.json",
+      "bytes": 978,
+      "sha256": "f4e0bfb9747c7d6fc09345fd47c75b8210ff04947e11340c1a1970569aa53d5d"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_013301_d33219_yaw/measurement_update.json",
+      "bytes": 585,
+      "sha256": "9342980f8a05621c5f8dd4be9cbae3b4df5d9d9e4c95819014305439d1632e28"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_013301_d33219_yaw/poses.csv",
+      "bytes": 2162143,
+      "sha256": "aa2f420e0d2a097ce7c2f4549da2ccd6de67f71000286800375c22c77f9e56b1"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_013616_277be8_yaw/capture_receipt.json",
+      "bytes": 367,
+      "sha256": "015f9c30ed5d31df6eace689eb295bf7df100bf2edc25a1be0ee341d97fb5770"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_013616_277be8_yaw/config.json",
+      "bytes": 978,
+      "sha256": "f4e0bfb9747c7d6fc09345fd47c75b8210ff04947e11340c1a1970569aa53d5d"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_013616_277be8_yaw/measurement_update.json",
+      "bytes": 585,
+      "sha256": "9342980f8a05621c5f8dd4be9cbae3b4df5d9d9e4c95819014305439d1632e28"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_013616_277be8_yaw/poses.csv",
+      "bytes": 2163393,
+      "sha256": "aa242d0b899f654fc38198cd0a8a8acdcbc46b41ece10cf089e206ad039b1905"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_014956_52516e_roll/capture_receipt.json",
+      "bytes": 368,
+      "sha256": "3e3d2d15dc8096dd551c641b4010d459546734340daa65b88bd1c96fa7144d69"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_014956_52516e_roll/config.json",
+      "bytes": 979,
+      "sha256": "3bc2c912e512dfc8eaa4d826720f8d09d2b829663a74f9d0b7133c7f656fbca6"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_014956_52516e_roll/measurement_update.json",
+      "bytes": 586,
+      "sha256": "c9b31d4e419f76f41769053bacddb3d4f4d622570423bd5c77c26a479802ad66"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_014956_52516e_roll/poses.csv",
+      "bytes": 2147398,
+      "sha256": "281a81405db75a6bffb662788e3ce25eac3b4a65052e9e46cbc129514ca259b5"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_015616_92ccd9_roll/capture_receipt.json",
+      "bytes": 369,
+      "sha256": "1f69e2694c86ecef021d20b4802ba7442071e6aa24c18a8f75392c5f88c5d1fb"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_015616_92ccd9_roll/config.json",
+      "bytes": 1012,
+      "sha256": "ffe96ec218f65b83d02a3b08c545523627bcb13d054bb6fc15eaf344d67dccf3"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_015616_92ccd9_roll/measurement_update.json",
+      "bytes": 586,
+      "sha256": "c9b31d4e419f76f41769053bacddb3d4f4d622570423bd5c77c26a479802ad66"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_015616_92ccd9_roll/poses.csv",
+      "bytes": 2147852,
+      "sha256": "0d23c467a5049f7cf98242db25888701396748f2bf36db466989ac5ed9bd8933"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_015857_7364a6_pitch/capture_receipt.json",
+      "bytes": 369,
+      "sha256": "8db4c21714c50a0c8dbcc46900a932aafa72fded430928b9c6650a810737e516"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_015857_7364a6_pitch/config.json",
+      "bytes": 1013,
+      "sha256": "daac592b737cc80425181c40795611642441fc1edb8ae1c3edbe289b2eb08b76"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_015857_7364a6_pitch/measurement_update.json",
+      "bytes": 587,
+      "sha256": "9f9a6e9218df7f7df5012aafa192eeb2dc7d8c25a45ffe0f7a5dd0d181d409b1"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_015857_7364a6_pitch/poses.csv",
+      "bytes": 2161361,
+      "sha256": "53744b5c335b12d9b2eeeb012f11abfaeade845f7e57374fe958c0bedd3db771"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_015956_a222c7_pitch/capture_receipt.json",
+      "bytes": 368,
+      "sha256": "afef9bcf5fa6faf23a482f65b70bf8d75d98f762a825a7934a5b1633310bd690"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_015956_a222c7_pitch/config.json",
+      "bytes": 1013,
+      "sha256": "daac592b737cc80425181c40795611642441fc1edb8ae1c3edbe289b2eb08b76"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_015956_a222c7_pitch/measurement_update.json",
+      "bytes": 587,
+      "sha256": "9f9a6e9218df7f7df5012aafa192eeb2dc7d8c25a45ffe0f7a5dd0d181d409b1"
+    },
+    {
+      "path": "data/raw/bifilar/raven_bifilar_20261024_015956_a222c7_pitch/poses.csv",
+      "bytes": 2162684,
+      "sha256": "294c27c851f9ae857a21a9f794f8154cdd82118b44f8280a3508b91e5041ecd5"
+    },
+    {
+      "path": "parameters/dynamic_models.json",
+      "bytes": 6151,
+      "sha256": "2bd6fc7c98e07564ebe69cc8769b9e87158e9adfaff8468654042bba104a4896"
+    },
+    {
+      "path": "parameters/fixture_geometry.json",
+      "bytes": 3947,
+      "sha256": "c226fd8a043ad859ebb523a45ebe46c819d468155c7fed2b345e4622814739f5"
+    },
+    {
+      "path": "parameters/inertia_selection.json",
+      "bytes": 2151,
+      "sha256": "d0e5de1ef87db37d9f4fd8236eb5feca5bbdcca8893fca18fc5f7e26bcc74906"
+    },
+    {
+      "path": "parameters/inertial_model.json",
+      "bytes": 2159,
+      "sha256": "10fe6bcbbead5020d545537163d1f92ad9b59ad15182fcb9e317de67aa1d0252"
+    },
+    {
+      "path": "parameters/marker_measurements.json",
+      "bytes": 3734,
+      "sha256": "45b98a81556537c99acd1fe92acfdc9b74c5afdce9990c129ce6b3a02561b836"
+    },
+    {
+      "path": "parameters/measurement_settings.json",
+      "bytes": 2344,
+      "sha256": "8d4b2be06e5beef9daa0f20502aee264889657ebe1f786d6cdbf4d8eaaea26f9"
+    },
+    {
+      "path": "parameters/reaction_torque_model.json",
+      "bytes": 2472,
+      "sha256": "2d99f467d0501634de48add2df5a25a35a24ab23f09d0cae136255393094068e"
+    },
+    {
+      "path": "parameters/recommendation.json",
+      "bytes": 1240,
+      "sha256": "e3e25498c8e479cbac2ea97046f1054bb3f22b7eb417d47ea5983345cfc731ef"
+    },
+    {
+      "path": "parameters/static_models.json",
+      "bytes": 27719,
+      "sha256": "b90da27bdef4343b5bbc609319770639c285abcbbb5167d01740635dee6474f1"
+    },
+    {
+      "path": "media/identification/command-curves.svg",
+      "bytes": 261820,
+      "sha256": "63f4ca01b34e975f95a28e6547b4929b3f7d5ffadbea657d099a0783dee99cb7"
+    },
+    {
+      "path": "media/identification/command-voltage-surfaces.svg",
+      "bytes": 2359193,
+      "sha256": "78668fd2930cf21ad17884c336dd2a70bae3e4628fac0406d269ad55f1f31e31"
+    },
+    {
+      "path": "media/identification/efficiency-voltage-drop.svg",
+      "bytes": 128240,
+      "sha256": "58253f8794ae74c6b7a72d901d36e4e71619603a5bef857ed630e5c960c96f8b"
+    },
+    {
+      "path": "media/identification/rotor-laws.svg",
+      "bytes": 151849,
+      "sha256": "fedc5aeaf4317038ee4da027f48d61857a2c6546beca3a17ee39002eb11af7b7"
+    },
+    {
+      "path": "media/identification/step-responses.svg",
+      "bytes": 409309,
+      "sha256": "3e0f6a17fa6c1a4b85054f9019e5e3669b0349635925e63fde3e3d04e0e4c5c1"
+    },
+    {
+      "path": "media/identification/vibration.svg",
+      "bytes": 117713,
+      "sha256": "1d03dfed616426ad37b6ce0c8e7d5d2d2d39acd461280e477556cb5c4bfa7169"
+    },
+    {
+      "path": "media/inertia/cad-markers.png",
+      "bytes": 4751553,
+      "sha256": "4c962f90c4f96bc774a9bacb518f580ba6d6d4ad3cd701247c773a6933272ca6"
+    },
+    {
+      "path": "media/inertia/com-fixture.svg",
+      "bytes": 28346,
+      "sha256": "0b366e70fe07953ad15d037f48f69254eed93ad152538bff9f8a2695289392f3"
+    },
+    {
+      "path": "media/inertia/oscillation-fits.svg",
+      "bytes": 297387,
+      "sha256": "ec2dbde450139afec4dec2543639541ad21ba2fde88a8177af4f40917b6fed51"
+    },
+    {
+      "path": "media/inertia/suspension.svg",
+      "bytes": 1357678,
+      "sha256": "c7dd69543826f70f5b9e3582ad6322101034c546ef8c0fa746413540aa9c26ba"
+    }
+  ]
+}

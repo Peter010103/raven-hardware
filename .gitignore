@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+build/
+.DS_Store
+*.log
+# Full campaigns, report PDFs and source CAD stay in the external archives.
+*.pdf
+*.BFL
+*.usdz
+*.f3z
+*.zip

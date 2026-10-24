@@ -1,0 +1,219 @@
+{
+  "models": [
+    {
+      "signal": "RPM",
+      "name": "first_global",
+      "kind": "first",
+      "parameters": [
+        0.0017634598349229545,
+        0.02189140910403713
+      ],
+      "train_RMSE_fraction": 0.11644164747935164,
+      "selection_RMSE_fraction": 0.12678470896359287
+    },
+    {
+      "signal": "RPM",
+      "name": "two_pole_global",
+      "kind": "two_pole",
+      "parameters": [
+        9.883550764728234e-13,
+        0.0018459496505763818,
+        0.021750225698080876
+      ],
+      "train_RMSE_fraction": 0.11644091170806779,
+      "selection_RMSE_fraction": 0.1267869447884989
+    },
+    {
+      "signal": "RPM",
+      "name": "damped_global",
+      "kind": "damped",
+      "parameters": [
+        1.0288953360383963e-11,
+        157.82079002109865,
+        1.861981925899484
+      ],
+      "train_RMSE_fraction": 0.11644091036382458,
+      "selection_RMSE_fraction": 0.12678694386797726
+    },
+    {
+      "signal": "RPM",
+      "name": "first_voltage_direction",
+      "kind": "first_lpv",
+      "delay_s": 0.0020847915388453662,
+      "log_tau_coefficients": [
+        -3.898698183755451,
+        -0.008813371655512228,
+        -0.08836821522279398,
+        0.05004721503436825
+      ],
+      "features": [
+        "1",
+        "(V-14)/3",
+        "(center_u-1450)/300",
+        "down:+1 up:-1"
+      ],
+      "selection_RMSE_fraction": 0.12661989913822447
+    },
+    {
+      "signal": "T_N",
+      "name": "first_global",
+      "kind": "first",
+      "parameters": [
+        0.03257397886976098,
+        0.025170183791696447
+      ],
+      "train_RMSE_fraction": 0.036070622002143414,
+      "selection_RMSE_fraction": 0.03228892582746155
+    },
+    {
+      "signal": "T_N",
+      "name": "two_pole_global",
+      "kind": "two_pole",
+      "parameters": [
+        0.025601419547878507,
+        0.009571221496609116,
+        0.021945484681091434
+      ],
+      "train_RMSE_fraction": 0.03533219941271807,
+      "selection_RMSE_fraction": 0.031521980951972096
+    },
+    {
+      "signal": "T_N",
+      "name": "damped_global",
+      "kind": "damped",
+      "parameters": [
+        0.02560118081114247,
+        68.99751345197818,
+        1.0872946913250021
+      ],
+      "train_RMSE_fraction": 0.03533219990910005,
+      "selection_RMSE_fraction": 0.03152198503021537
+    },
+    {
+      "signal": "T_N",
+      "name": "first_voltage_direction",
+      "kind": "first_lpv",
+      "delay_s": 0.032735530492639144,
+      "log_tau_coefficients": [
+        -3.692750109088812,
+        0.018760595709127026,
+        0.0801834413750598,
+        -0.03260022659389883
+      ],
+      "features": [
+        "1",
+        "(V-14)/3",
+        "(center_u-1450)/300",
+        "down:+1 up:-1"
+      ],
+      "selection_RMSE_fraction": 0.03236982068018446
+    },
+    {
+      "signal": "Q_Nm",
+      "name": "first_global",
+      "kind": "first",
+      "parameters": [
+        0.01926139664602161,
+        0.0017180835763094136
+      ],
+      "train_RMSE_fraction": 0.6209360471203537,
+      "selection_RMSE_fraction": 0.6213200029977778
+    },
+    {
+      "signal": "Q_Nm",
+      "name": "two_pole_global",
+      "kind": "two_pole",
+      "parameters": [
+        0.018299939004224528,
+        0.0013797229918234618,
+        0.0013800406716378134
+      ],
+      "train_RMSE_fraction": 0.6209485908815139,
+      "selection_RMSE_fraction": 0.6213297566637475
+    },
+    {
+      "signal": "Q_Nm",
+      "name": "damped_global",
+      "kind": "damped",
+      "parameters": [
+        2.0586825097846066e-52,
+        52.29193484400452,
+        0.27287351275277266
+      ],
+      "train_RMSE_fraction": 0.5754854794814973,
+      "selection_RMSE_fraction": 0.5757844016384192
+    },
+    {
+      "signal": "Q_Nm",
+      "name": "first_voltage_direction",
+      "kind": "first_lpv",
+      "delay_s": 0.01900147070065763,
+      "log_tau_coefficients": [
+        -6.037823821775603,
+        -0.0031662481849282498,
+        0.2532261002270703,
+        0.03163127401174304
+      ],
+      "features": [
+        "1",
+        "(V-14)/3",
+        "(center_u-1450)/300",
+        "down:+1 up:-1"
+      ],
+      "selection_RMSE_fraction": 0.6212408763818511
+    }
+  ],
+  "selected": {
+    "RPM": {
+      "name": "first_voltage_direction",
+      "kind": "first_lpv",
+      "delay_s": 0.0020847915388453662,
+      "log_tau_coefficients": [
+        -3.898698183755451,
+        -0.008813371655512228,
+        -0.08836821522279398,
+        0.05004721503436825
+      ],
+      "features": [
+        "1",
+        "(V-14)/3",
+        "(center_u-1450)/300",
+        "down:+1 up:-1"
+      ],
+      "selection_RMSE_fraction": 0.12661989913822447,
+      "note": "Selected using last2 pairs/condition; all normalized errors are fractions of the individual step amplitude."
+    },
+    "T_N": {
+      "name": "two_pole_global",
+      "kind": "two_pole",
+      "parameters": [
+        0.025601419547878507,
+        0.009571221496609116,
+        0.021945484681091434
+      ],
+      "train_RMSE_fraction": 0.03533219941271807,
+      "selection_RMSE_fraction": 0.031521980951972096,
+      "note": "Selected using last2 pairs/condition; all normalized errors are fractions of the individual step amplitude."
+    },
+    "Q_Nm": {
+      "name": "damped_global",
+      "kind": "damped",
+      "parameters": [
+        2.0586825097846066e-52,
+        52.29193484400452,
+        0.27287351275277266
+      ],
+      "train_RMSE_fraction": 0.5754854794814973,
+      "selection_RMSE_fraction": 0.5757844016384192,
+      "note": "Selected using last2 pairs/condition; all normalized errors are fractions of the individual step amplitude."
+    }
+  },
+  "n_accepted_by_signal": {
+    "RPM": 233,
+    "T_N": 356,
+    "Q_Nm": 347
+  },
+  "n_excluded": 136,
+  "split": "First8 rise/fall pairs per condition fit; last2 pairs select. Whole F sequences remain external validation.",
+  "limits": "RPM timing is FC motor-output edge to RPM telemetry. Load-cell responses include HX711 filtering, rig dynamics and cross-clock registration error; they are not pure motor lag. Delay parameters near sampling/clock uncertainty should not be interpreted as separately resolved physical transport delay."
+}

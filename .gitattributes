@@ -1,0 +1,9 @@
+* text=auto
+*.csv text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.npz binary
+*.png binary
+
+# Preserve recorded evidence byte-for-byte, including original CRLF pose CSVs.
+data/** -text whitespace=cr-at-eol

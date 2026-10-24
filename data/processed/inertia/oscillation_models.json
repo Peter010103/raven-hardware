@@ -1,0 +1,122 @@
+{
+  "yaw": {
+    "axis": "yaw",
+    "run": "raven_bifilar_20261024_013616_277be8_yaw",
+    "train_window_s_after_cue": [
+      32,
+      42
+    ],
+    "forecast_window_s_after_cue": [
+      42,
+      45
+    ],
+    "forecast_samples": 599,
+    "fit": {
+      "frequency_damped_hz": 0.7577225791484127,
+      "period_damped_s": 1.3197442276616298,
+      "decay_per_s": 0.04022904904888555,
+      "amplitude_at_fit_start_deg": 9.896851476906637,
+      "residual_rms_deg": 0.05969513973711091,
+      "residual_to_oscillation_rms": 0.010305575042491293,
+      "fitted_cycles": 7.562071339901159,
+      "peak_period_median_s": 1.32,
+      "peak_period_sd_s": 0.01632993161855431,
+      "peak_period_count": 7,
+      "failures": [],
+      "warnings": []
+    },
+    "model": "theta = c0+c1*(t-training_mean_t)+exp(-lambda*t)*(A*cos(omega*t)+B*sin(omega*t))",
+    "time_basis": "Original integer-derived source timestamps; t0 is first selected training sample",
+    "coefficients_c0_c1_A_B": [
+      -0.005889923262930639,
+      -1.9022736159376996e-05,
+      -0.1577370179201916,
+      0.07039601856676656
+    ],
+    "training_mean_t_s": 4.99,
+    "forecast_RMS_deg": 0.2431998623192194,
+    "forecast_RMS_fraction_of_observed_oscillation": 0.05736710618992276,
+    "forecast_note": "Parameters use the selected training window only; the following 3 s are predicted without refitting. This is temporal holdout within one capture, not an independent-run validation.",
+    "raw_pose_SHA256": "aa242d0b899f654fc38198cd0a8a8acdcbc46b41ece10cf089e206ad039b1905"
+  },
+  "pitch": {
+    "axis": "pitch",
+    "run": "raven_bifilar_20261024_015956_a222c7_pitch",
+    "train_window_s_after_cue": [
+      20,
+      30
+    ],
+    "forecast_window_s_after_cue": [
+      30,
+      33
+    ],
+    "forecast_samples": 601,
+    "fit": {
+      "frequency_damped_hz": 0.796949946244597,
+      "period_damped_s": 1.254783948116465,
+      "decay_per_s": 0.05103720079064028,
+      "amplitude_at_fit_start_deg": 9.621052708651858,
+      "residual_rms_deg": 0.14040507436488012,
+      "residual_to_oscillation_rms": 0.02619897356879717,
+      "fitted_cycles": 7.953560463521079,
+      "peak_period_median_s": 1.2599999999999998,
+      "peak_period_sd_s": 0.015118578920369061,
+      "peak_period_count": 7,
+      "failures": [],
+      "warnings": []
+    },
+    "model": "theta = c0+c1*(t-training_mean_t)+exp(-lambda*t)*(A*cos(omega*t)+B*sin(omega*t))",
+    "time_basis": "Original integer-derived source timestamps; t0 is first selected training sample",
+    "coefficients_c0_c1_A_B": [
+      0.0005820733082247718,
+      8.387669933260233e-05,
+      0.11720543005901723,
+      -0.12024846611101925
+    ],
+    "training_mean_t_s": 4.99,
+    "forecast_RMS_deg": 0.3477115695967377,
+    "forecast_RMS_fraction_of_observed_oscillation": 0.09155320527456645,
+    "forecast_note": "Parameters use the selected training window only; the following 3 s are predicted without refitting. This is temporal holdout within one capture, not an independent-run validation.",
+    "raw_pose_SHA256": "294c27c851f9ae857a21a9f794f8154cdd82118b44f8280a3508b91e5041ecd5"
+  },
+  "roll": {
+    "axis": "roll",
+    "run": "raven_bifilar_20261024_014956_52516e_roll",
+    "train_window_s_after_cue": [
+      29,
+      39
+    ],
+    "forecast_window_s_after_cue": [
+      39,
+      42
+    ],
+    "forecast_samples": 599,
+    "fit": {
+      "frequency_damped_hz": 0.814806136516532,
+      "period_damped_s": 1.227285798650475,
+      "decay_per_s": 0.04979692822876192,
+      "amplitude_at_fit_start_deg": 9.570715293291979,
+      "residual_rms_deg": 0.27763949909016333,
+      "residual_to_oscillation_rms": 0.05190878936238545,
+      "fitted_cycles": 8.131765242434989,
+      "peak_period_median_s": 1.2000000000000002,
+      "peak_period_sd_s": 0.05145501965424784,
+      "peak_period_count": 7,
+      "failures": [],
+      "warnings": []
+    },
+    "model": "theta = c0+c1*(t-training_mean_t)+exp(-lambda*t)*(A*cos(omega*t)+B*sin(omega*t))",
+    "time_basis": "Original integer-derived source timestamps; t0 is first selected training sample",
+    "coefficients_c0_c1_A_B": [
+      -0.002919132316076927,
+      9.016749207182984e-05,
+      -0.04299127348706827,
+      0.1614133728013082
+    ],
+    "training_mean_t_s": 4.99,
+    "forecast_RMS_deg": 0.34174916788789533,
+    "forecast_RMS_fraction_of_observed_oscillation": 0.0871559158270333,
+    "forecast_note": "Parameters use the selected training window only; the following 3 s are predicted without refitting. This is temporal holdout within one capture, not an independent-run validation.",
+    "raw_pose_SHA256": "281a81405db75a6bffb662788e3ce25eac3b4a65052e9e46cbc129514ca259b5"
+  }
+}

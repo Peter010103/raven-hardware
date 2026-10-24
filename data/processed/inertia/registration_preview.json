@@ -1,0 +1,69 @@
+{
+  "marker_centroid_motive_mm": [
+    1.6409999999999947,
+    0.9817499999999999,
+    0.15600000000000236
+  ],
+  "body_reference_origin": "Mean of M3\u2013M6, per operator. Reference origin is not a measured COM.",
+  "body_from_CAD_Yup": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ]
+  ],
+  "body_from_Motive_marker_points_provisional": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  ],
+  "point_basis_note": "Marker-table coordinate convention uses the observedY-up table and operator-described roll flip. Kept distinct from recorded ROS/TF quaternion basis. Verify with the visual layout.",
+  "CAD_z_offset_mm_for_mounting_preview": 13.35,
+  "vertical_offset_status": "Illustrative registration to place displayed marker spheres under4mm arm plates; not measured CAD-to-COM translation.",
+  "display_marker_diameter_mm": 12.7,
+  "physical_marker_diameter_confirmed": false,
+  "model_origin_centroid_constraint": "Markers are centred exactly at body origin. CAD lateral centre is aligned; vertical registration is explicitly provisional.",
+  "mesh": {
+    "stage_up_axis": "Y",
+    "stage_metres_per_unit": 0.001,
+    "original_meshes": 173,
+    "display_meshes": 153,
+    "display_triangles": 120426,
+    "detail_note": "Fasteners omitted; dense motor/electronic meshes use convex hulls. Frame and propeller outlines retained."
+  },
+  "source_markers": "marker_measurements.json",
+  "mass_or_inertia_calculated": false,
+  "CAD_FC_bbox_centre_body_mm_preview": [
+    -3.000156283378601,
+    -1.000000238418579,
+    23.311665570735933
+  ],
+  "estimated_COM_body_mm_preview": [
+    -3.000156283378601,
+    -1.000000238418579,
+    -1.6883344292640672
+  ],
+  "COM_preview_note": "Operator estimates COM25mm below actual FC; this display uses the approximate CAD FC bbox centre and unconfirmed vertical registration. Do not use this point as a measured COM for inertia correction."
+}

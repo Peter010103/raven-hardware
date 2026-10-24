@@ -1,0 +1,173 @@
+{
+  "mass_total_suspended_kg": 0.716,
+  "axis_order": [
+    "roll_X",
+    "pitch_Y",
+    "yaw_Z"
+  ],
+  "input_row_order": [
+    "yaw",
+    "pitch",
+    "roll"
+  ],
+  "projection_matrix_diagonal_terms": [
+    [
+      0.002113070966781002,
+      0.00019977767122893972,
+      0.9976871513619916
+    ],
+    [
+      0.00016849389470113358,
+      0.997733894782607,
+      0.0020976113226922376
+    ],
+    [
+      0.9709782379847871,
+      0.0050465517748291356,
+      0.023975210240382634
+    ]
+  ],
+  "projection_matrix_condition_number": 1.0395307525890496,
+  "suspension_axis_points_body_m": {
+    "yaw": [
+      0.0,
+      0.0,
+      -0.0036500000000000005
+    ],
+    "pitch": [
+      0.0,
+      0.07,
+      -0.0036500000000000005
+    ],
+    "roll": [
+      0.055,
+      0.0,
+      -0.0036500000000000005
+    ]
+  },
+  "legacy_common_origin_fit_per_mass_m2": [
+    0.002952315122295856,
+    0.002485248927782117,
+    0.004409371369586238
+  ],
+  "combined_suspension_axis_I_per_mass_m2": {
+    "yaw": 0.004405908109632546,
+    "pitch": 0.0024893636866044895,
+    "roll": 0.002984891278423817
+  },
+  "combined_suspension_axis_inertia_kg_m2": {
+    "yaw": 0.0031546302064969028,
+    "pitch": 0.0017823843996088145,
+    "roll": 0.0021371821553514527
+  },
+  "diagonal_inertia_about_marker_centroid_reference_per_mass_m2": [
+    0.0028784041867448234,
+    0.0024802359299175803,
+    0.004408934308467307
+  ],
+  "diagonal_inertia_about_marker_centroid_reference_kg_m2": [
+    0.0020609373977092935,
+    0.0017758489258209874,
+    0.0031567969648625916
+  ],
+  "approximate_COM_body_m_used_in_sensitivity_case": [
+    -0.003000156283378601,
+    -0.0010000002384185792,
+    -0.001688334429264067
+  ],
+  "mean_squared_COM_offset_perpendicular_to_each_axis_m2": {
+    "yaw": 1.0581542316314658e-05,
+    "pitch": 1.6861189397900968e-05,
+    "roll": 7.583999640195169e-05
+  },
+  "diagonal_inertia_about_preview_COM_per_mass_m2": [
+    0.0028745537131229476,
+    0.0024683845190478456,
+    0.004398933370265774
+  ],
+  "diagonal_inertia_about_preview_COM_kg_m2": [
+    0.0020581804585960302,
+    0.0017673633156382574,
+    0.0031496362931102938
+  ],
+  "inertia_tensor_about_preview_COM_kg_m2": [
+    [
+      0.0020581804585960302,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0017673633156382574,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0031496362931102938
+    ]
+  ],
+  "COM_case_assumptions": [
+    "Suspension axes pass through the lower-contact midpoints in fixture_geometry.json; roll front / pitch left side selection is inferred from pose and free-hanging stability.",
+    "COM is 25 mm below the FC, with the approximate CAD FC reference and provisional CAD height registration.",
+    "Body-frame products of inertia at the estimated COM are zero. Three scalar measurements cannot identify six independent tensor entries.",
+    "The provided mass is used as total suspended mass when supplied; no unprovided marker, fixture or attachment masses are subtracted.",
+    "Zero products are assumed at COM. Reference-origin values are derived by a parallel-axis shift of that tensor; off-diagonal entries at the reference origin are not generally zero."
+  ],
+  "fixture_and_marker_inertia_subtracted": false,
+  "off_diagonal_terms_measured": false,
+  "geometry_uncertainty_quantified": false,
+  "status": "provisional_suspended_system_estimate",
+  "source_inputs": {
+    "geometry_pose_summary_SHA256": "59c8971454de0d5600e4372715636bc42924e78dfecc6d20eb7512dd60e6bda8",
+    "registration_preview_SHA256": "1ba38e41037e44a8a4a3e38e59eb465c52640dd33a91e4d57f146706626a5879"
+  },
+  "orientation_operator_confirmed": true,
+  "adopted_reference": {
+    "status": "adopted_final_working_model",
+    "adopted_on": "2026-10-24",
+    "vehicle": "Raven",
+    "mass_total_kg": 0.716,
+    "selected_reference": "CAD FC position minus25mm along drone body Z",
+    "adopted_COM_body_m": [
+      -0.003000156283378601,
+      -0.0010000002384185792,
+      -0.001688334429264067
+    ],
+    "body_frame": "X forward, Y left, Z up; body reference origin at mean of M3\u2013M6",
+    "operator_decision": "Use the COM from the CAD FC offset as the final working inertia reference.",
+    "underlying_accuracy_status": "CAD-based adopted reference; suspension-axis placement, attachments and uncertainty remain uncalibrated.",
+    "freeze_policy": "The adopted COM is frozen here. Regenerating or adjusting a visual preview must not change the adopted numerical model.",
+    "source_preview_registration": "preview/registration_preview.json",
+    "accuracy_inputs_still_missing": [
+      "Confirmation of inferred front roll / left pitch contact edges, and independently measured upper-anchor positions and individual loaded string lengths",
+      "Independent actual FC/COM survey; the CAD approximation is already accepted as the working reference",
+      "Mass/position of removable markers or fixture if a configuration excluding them is desired",
+      "Measurement tolerances on mass, string lengths and contact spacings",
+      "Resolution of M2-Z/M3-Y typed-versus-live marker coordinate differences",
+      "Additional independent directions if nonzero products of inertia are to be identified"
+    ],
+    "measurement_axis_points_body_m": {
+      "yaw": [
+        0.0,
+        0.0,
+        -0.0036500000000000005
+      ],
+      "pitch": [
+        0.0,
+        0.07,
+        -0.0036500000000000005
+      ],
+      "roll": [
+        0.055,
+        0.0,
+        -0.0036500000000000005
+      ]
+    },
+    "axis_point_source": "fixture_geometry.json:110x140mm rectangle10mm below arms; rollfront/pitchleft edges inferred from pose and free-hanging stability",
+    "fixture_plane_body_Z_m": -0.0036500000000000005,
+    "cad_arm_underside_body_Z_m": 0.00635,
+    "geometry_revision": "Replace previous common-origin suspension-axis approximation with lower-contact edge midpoints."
+  },
+  "reference_adoption_status": "adopted_final_working_model"
+}

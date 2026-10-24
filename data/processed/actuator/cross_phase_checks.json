@@ -1,0 +1,44 @@
+{
+  "drift_reference": {
+    "n": 96,
+    "inside_domain": 92,
+    "T_RMSE_N": 0.01313581559781694,
+    "Q_RMSE_Nm": 0.00016974519972208553
+  },
+  "envelope_probe": {
+    "n": 109,
+    "inside_domain": 100,
+    "T_RMSE_N": 0.06074627037587147,
+    "Q_RMSE_Nm": 0.0006285346911817289
+  },
+  "priority_pilot": {
+    "n": 9,
+    "inside_domain": 9,
+    "T_RMSE_N": 0.010891706887713005,
+    "Q_RMSE_Nm": 8.680909568481606e-05
+  },
+  "rundown_initial": {
+    "n": 10,
+    "inside_domain": 9,
+    "T_RMSE_N": 0.007873138551721165,
+    "Q_RMSE_Nm": 0.00016963650265711886
+  },
+  "rundown_level": {
+    "n": 90,
+    "inside_domain": 42,
+    "T_RMSE_N": 0.01015117785565066,
+    "Q_RMSE_Nm": 0.00011113296170950375
+  },
+  "startup_probe": {
+    "n": 89,
+    "inside_domain": 48,
+    "T_RMSE_N": 0.0058065392398330366,
+    "Q_RMSE_Nm": 0.00012625016208883983
+  },
+  "static_plateau": {
+    "n": 322,
+    "inside_domain": 322,
+    "T_RMSE_N": 0.03538837028486077,
+    "Q_RMSE_Nm": 0.00043809043344486044
+  }
+}

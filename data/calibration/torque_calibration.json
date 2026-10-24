@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "status": "Bidirectional deadweight calibration candidate; nominal masses/positions",
+  "sign_convention": "Operator-view ACW positive, CW negative; same viewpoint in both sessions. Drone body-axis sign not independently registered.",
+  "formula": "tau_Nm = a1*(torque_1_counts-tare_1_counts) + a2*(torque_2_counts-tare_2_counts)",
+  "a1_Nm_per_count": -1.74176576636578e-06,
+  "a2_Nm_per_count": -2.0314283064548136e-06,
+  "tare": "Fresh bare-arm tare in the same orientation/preload configuration, with no added calibration weights; use matching raw-count channel names.",
+  "reference": "Incremental applied moment = sign * added_mass_kg * 9.80665 * horizontal_lever_arm_m. Bar self-moment is removed by tare.",
+  "domain": {
+    "reference_Nm": [
+      -0.024516625,
+      0.024516625
+    ],
+    "smallest_nonzero_reference_magnitude_Nm": 0.004903325,
+    "joint_observed_delta_counts": [
+      [
+        -220.0,
+        -2245.0
+      ],
+      [
+        -1552.0,
+        -3542.0
+      ],
+      [
+        -461.0,
+        -4512.0
+      ],
+      [
+        -2851.0,
+        -4812.0
+      ],
+      [
+        -3081.0,
+        -7069.0
+      ],
+      [
+        -984.0,
+        -11131.0
+      ],
+      [
+        -466.0,
+        -4499.0
+      ],
+      [
+        -243.0,
+        -2229.0
+      ],
+      [
+        2446.0,
+        299.0
+      ],
+      [
+        3798.0,
+        1599.0
+      ],
+      [
+        4887.0,
+        628.0
+      ],
+      [
+        5118.5,
+        2882.5
+      ],
+      [
+        7520.0,
+        3190.0
+      ],
+      [
+        12188.0,
+        1602.0
+      ],
+      [
+        4868.0,
+        602.0
+      ],
+      [
+        2465.0,
+        307.0
+      ]
+    ],
+    "restriction": "Observed static fixture and reaction/load path only; zero plus discrete reference levels from about 4.90 to 24.52 mN m in each direction. No dynamic torque response identified."
+  },
+  "validation": {
+    "accepted_load_captures": 16,
+    "unique_signed_mass_distance_conditions": 12,
+    "unique_unsigned_mass_distance_conditions": 6,
+    "training_RMSE_Nm": 9.07698997784171e-05,
+    "held_out_mass_distance_condition_RMSE_Nm": 0.0001419222890953056,
+    "held_out_condition_max_absolute_error_Nm": 0.00044852764147014154,
+    "grouping": "Both signs and all repeats of an unsigned (mass,distance) condition held out together. Fit balances direction/condition; quoted RMS averages held-out capture errors.",
+    "direction_transfer": [
+      {
+        "trained_on": "ACW",
+        "tested_on": "CW",
+        "coefficients": [
+          -1.6850552252436571e-06,
+          -2.0448566326228986e-06
+        ],
+        "opposite_direction_RMSE_Nm": 0.0003518846434123975,
+        "opposite_direction_max_error_Nm": 0.0007033115892684239
+      },
+      {
+        "trained_on": "CW",
+        "tested_on": "ACW",
+        "coefficients": [
+          -1.7495169713409028e-06,
+          -2.0070127124124766e-06
+        ],
+        "opposite_direction_RMSE_Nm": 0.00016488185946121847,
+        "opposite_direction_max_error_Nm": 0.00045504179833727454
+      }
+    ]
+  },
+  "limits": [
+    "Masses and COM lever arms are operator nominal values; their uncertainties were not independently measured.",
+    "Both 40 g checks were skipped in each direction; one partial cycle per direction.",
+    "Three accepted CW captures and two ACW captures have gross thrust-channel read anomalies; torque-channel traces show no analogous large spikes. Raw data remain intact.",
+    "Transfer to the drone installation requires the same mechanical reaction path and consistent axis/sign convention.",
+    "No historical motor torque curve, production actuator model or firmware has been automatically changed."
+  ],
+  "provenance": {
+    "sessions": [
+      {
+        "direction": "ACW",
+        "name": "acw_20261021T064153Z_cceb3e",
+        "session_sha256": "e7462d661ba8ccb570d27d40fea1270ae951e3c1dbe3d3756194060621277981",
+        "script_sha256": "2a77c184ab08cfde300a810b5925f2ba98c0a8860dc8f562c5aa04e0c9428cc7",
+        "library_sha256": "718ad1b8246956d644a02b9c203d6475145b389e9002c51aeca2419b0b25c3fb",
+        "status": "incomplete_skipped_points",
+        "accepted_stages": 10,
+        "accepted_loads": 8,
+        "planned_stages": 24,
+        "skipped_steps": [
+          7,
+          9,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "rejected_attempts": 0
+      },
+      {
+        "direction": "CW",
+        "name": "cw_20261021T065750Z_7d1703",
+        "session_sha256": "7e2c53249add5d3872d0957a7e365a2b92b87bc348bac9ffc58f17342870d7b2",
+        "script_sha256": "af7078c55779e58a3a959844cf55338c3a9db5415738339fa60256daa6c9ffb5",
+        "library_sha256": "718ad1b8246956d644a02b9c203d6475145b389e9002c51aeca2419b0b25c3fb",
+        "status": "incomplete_skipped_points",
+        "accepted_stages": 10,
+        "accepted_loads": 8,
+        "planned_stages": 12,
+        "skipped_steps": [
+          7,
+          9
+        ],
+        "rejected_attempts": 1
+      }
+    ],
+    "analysis_script_sha256": "d721117f7047713edc0233c30019f606e78fb7a9b6d8c3709bc36c0bfbc97efb",
+    "single_session_audit_script_sha256": "915766b6745a9008b2e011f3e8e46fe973cf53fafbaa936b7fa85d0aeb4520fb"
+  }
+}

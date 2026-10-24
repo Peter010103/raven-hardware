@@ -1,0 +1,15 @@
+{
+  "stage_up_axis": "Y",
+  "stage_metres_per_unit": 0.001,
+  "original_meshes": 173,
+  "display_meshes": 153,
+  "display_triangles": 120426,
+  "detail_note": "Fasteners omitted; dense motor/electronic meshes use convex hulls. Frame and propeller outlines retained.",
+  "units": "millimetres",
+  "frame": "Body X forward, Y left, Z up; origin mean of M3\u2013M6",
+  "source": "Raven/inertia_measurements/TBS_SO_v3_RPi_v2.usdz",
+  "source_SHA256": "6ec7c9aba576d7e37999379cbc08c87f68c79428a890d41dbec363cd3c336df9",
+  "CAD_z_offset_mm": 13.35,
+  "role": "Approximate visual registration only, not a collision mesh or inertial mass model",
+  "mesh_precision": "float32 preview vertices; canonical mass/COM/inertia retained separately at full precision"
+}

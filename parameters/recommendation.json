@@ -1,0 +1,21 @@
+{
+  "recommended_running_model": {
+    "static_variant": "physics",
+    "speed_dynamics": "first_global",
+    "tau_s": 0.02189140910403713,
+    "delay_s": 0.0017634598349229545,
+    "voltage_input": "Delivered FC voltage; primary sequence validation uses interpolated MSP display-filtered voltage",
+    "reserved_voltage_sequence_RPM_RMSE": 392.0148478420776
+  },
+  "alternatives": {
+    "simple": "Voltage times quadratic command, square rotor laws, same global first-order lag",
+    "surface": "Independent degree4 T/Q/omega/power surfaces: maximum static accuracy",
+    "first_voltage_direction": "Slight repeated-step selection gain, worse F sequence score with filtered V; optional only",
+    "reaction_torque": "Optional kQ*omega\u00b2 + J_effective*domega/dt; conditional effective coefficient, not independently calibrated inertia"
+  },
+  "measurement_path_only": [
+    "Thrust two-pole response",
+    "Torque observation filter in reaction_torque_model.json"
+  ],
+  "limits": "One EMAX ECOII2207 1900KV, HQ5x4.8x3V1S ACW prop, disarmed direct MSP motor4 / DShot600. No armed Acro/vbat-compensation identification. Only within observed positive command-voltage hull; startup/coastdown and loaded-flight behaviour not identified."
+}

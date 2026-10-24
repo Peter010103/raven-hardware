@@ -1,0 +1,1011 @@
+{
+  "scope": "Signal sufficiency for three bifilar directions; no final drone inertia calculated",
+  "selection_rule": "Grid of starts every1s, durations10/8.1/15s. Per run: earliest passing10s window, otherwise15s, otherwise8.1s. Per axis: latest run with such a window. Not minimum-residual selection.",
+  "gates": {
+    "maximum_starting_amplitude_deg": 10,
+    "minimum_cycles": 6,
+    "maximum_fit_residual_fraction": 0.15,
+    "maximum_source_gap_s": 0.1,
+    "maximum_relative_rocking_deg": 3,
+    "rotation_step_flag_deg_at_200Hz": 5,
+    "pose_jump_guard_s": 0.25
+  },
+  "all_axes_have_qualifying_period_data": true,
+  "preferred_runs": {
+    "yaw": "raven_bifilar_20261024_013616_277be8_yaw",
+    "pitch": "raven_bifilar_20261024_015956_a222c7_pitch",
+    "roll": "raven_bifilar_20261024_014956_52516e_roll"
+  },
+  "selected": {
+    "yaw": {
+      "run": "raven_bifilar_20261024_013616_277be8_yaw",
+      "axis": "yaw",
+      "start_s": 32,
+      "end_s": 42,
+      "duration_s": 10,
+      "qualifies": true,
+      "reasons": [],
+      "period_s": 1.3197442276613145,
+      "frequency_hz": 0.7577225791485936,
+      "decay_per_s": 0.04022904904910906,
+      "amplitude_deg": 9.896851476915922,
+      "residual_rms_deg": 0.059695139737110735,
+      "relative_residual": 0.010305575042491239,
+      "fitted_cycles": 7.562071339902965,
+      "max_rocking_deg": 0.4348510317286014,
+      "world_vertical_in_marker": [
+        -0.04591493186238119,
+        0.014021442539381935,
+        0.9988469443218955
+      ],
+      "fit_failures": []
+    },
+    "pitch": {
+      "run": "raven_bifilar_20261024_015956_a222c7_pitch",
+      "axis": "pitch",
+      "start_s": 20,
+      "end_s": 30,
+      "duration_s": 10,
+      "qualifies": true,
+      "reasons": [],
+      "period_s": 1.254783948096704,
+      "frequency_hz": 0.7969499462571478,
+      "decay_per_s": 0.05103720076590126,
+      "amplitude_deg": 9.621052707618915,
+      "residual_rms_deg": 0.14040507436487992,
+      "relative_residual": 0.026198973568808806,
+      "fitted_cycles": 7.953560463646335,
+      "max_rocking_deg": 0.9032501140533452,
+      "world_vertical_in_marker": [
+        -0.012384512534642242,
+        -0.9988844858380762,
+        0.045567617902206654
+      ],
+      "fit_failures": []
+    },
+    "roll": {
+      "run": "raven_bifilar_20261024_014956_52516e_roll",
+      "axis": "roll",
+      "start_s": 29,
+      "end_s": 39,
+      "duration_s": 10,
+      "qualifies": true,
+      "reasons": [],
+      "period_s": 1.2272857988148942,
+      "frequency_hz": 0.8148061364073726,
+      "decay_per_s": 0.04979692825841069,
+      "amplitude_deg": 9.570715294198537,
+      "residual_rms_deg": 0.2776394990901632,
+      "relative_residual": 0.05190878936167313,
+      "fitted_cycles": 8.13176524134558,
+      "max_rocking_deg": 1.4708769534199118,
+      "world_vertical_in_marker": [
+        0.9854103424473711,
+        0.0709166262960762,
+        0.1547168029418181
+      ],
+      "fit_failures": []
+    }
+  },
+  "runs": [
+    {
+      "run": "raven_bifilar_20261024_012836_37de3c_yaw",
+      "axis": "yaw",
+      "samples": 0,
+      "capture_error": "RuntimeError: No fresh tracked poses within 15 seconds; check OptiTrack/DDS",
+      "selected_window": null,
+      "small_angle_windows": 0,
+      "ten_second_small_angle_windows": 0,
+      "raw_orientation_retained": false,
+      "verdict": "no recording"
+    },
+    {
+      "run": "raven_bifilar_20261024_012929_07d8a3_yaw",
+      "axis": "yaw",
+      "samples": 11021,
+      "capture_error": null,
+      "selected_window": null,
+      "small_angle_windows": 0,
+      "ten_second_small_angle_windows": 0,
+      "raw_orientation_retained": true,
+      "pose_sha256": "4ec39909d8175c0d09275abac813039d5c2498d3977bafe650d129bfbdfaa37a",
+      "capture_rate_hz": 199.99905050178543,
+      "max_source_gap_s": 0.006199123999998335,
+      "source_timestamps_valid": true,
+      "max_rotation_step_deg": 1.349680838274765,
+      "pose_jumps_over_5deg": 0,
+      "pose_jumps_after_cue": 0,
+      "last_pose_jump_after_cue_s": null,
+      "pose_jump_times_after_cue_s": [],
+      "absolute_orientation_convention": "world_from_marker, quaternion xyzw; no body alignment assumed",
+      "verdict": "no qualifying small-angle window; retain as amplitude/diagnostic evidence",
+      "nearest_12deg_diagnostic": {
+        "run": "raven_bifilar_20261024_012929_07d8a3_yaw",
+        "axis": "yaw",
+        "start_s": 35,
+        "end_s": 45,
+        "duration_s": 10,
+        "qualifies": false,
+        "reasons": [
+          "starting amplitude exceeds 10deg"
+        ],
+        "period_s": 1.3358755832216695,
+        "frequency_hz": 0.7485727058416219,
+        "decay_per_s": 0.03267013034059753,
+        "amplitude_deg": 20.490941945427913,
+        "residual_rms_deg": 0.1419080270111232,
+        "relative_residual": 0.011386774177598844,
+        "fitted_cycles": 7.470755604299387,
+        "max_rocking_deg": 1.8364834500192682,
+        "world_vertical_in_marker": [
+          -0.04630915120042511,
+          0.01360260108188386,
+          0.9988345367271314
+        ],
+        "fit_failures": []
+      },
+      "orientation_exports_saved": true,
+      "reported_suspension_geometry": {
+        "length_cm": 68.5,
+        "top_cm": 15.5,
+        "bottom_cm": 18.0
+      },
+      "nominal_marker_from_body_xyzw": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "run": "raven_bifilar_20261024_013301_d33219_yaw",
+      "axis": "yaw",
+      "samples": 11021,
+      "capture_error": null,
+      "selected_window": {
+        "run": "raven_bifilar_20261024_013301_d33219_yaw",
+        "axis": "yaw",
+        "start_s": 34,
+        "end_s": 44,
+        "duration_s": 10,
+        "qualifies": true,
+        "reasons": [],
+        "period_s": 1.3203688436225534,
+        "frequency_hz": 0.7573641295991262,
+        "decay_per_s": 0.04085525410015494,
+        "amplitude_deg": 9.752282441584889,
+        "residual_rms_deg": 0.06002746229545246,
+        "relative_residual": 0.01048090243445105,
+        "fitted_cycles": 7.55849401339928,
+        "max_rocking_deg": 0.5629399768713357,
+        "world_vertical_in_marker": [
+          -0.04599148085998633,
+          0.013983179861015983,
+          0.9988439589692076
+        ],
+        "fit_failures": []
+      },
+      "small_angle_windows": 5,
+      "ten_second_small_angle_windows": 2,
+      "raw_orientation_retained": true,
+      "pose_sha256": "aa2f420e0d2a097ce7c2f4549da2ccd6de67f71000286800375c22c77f9e56b1",
+      "capture_rate_hz": 199.99706582889135,
+      "max_source_gap_s": 0.0060764939999984335,
+      "source_timestamps_valid": true,
+      "max_rotation_step_deg": 0.8885990353983804,
+      "pose_jumps_over_5deg": 0,
+      "pose_jumps_after_cue": 0,
+      "last_pose_jump_after_cue_s": null,
+      "pose_jump_times_after_cue_s": [],
+      "absolute_orientation_convention": "world_from_marker, quaternion xyzw; no body alignment assumed",
+      "verdict": "usable small-angle period window; geometry/registration pending",
+      "nearest_12deg_diagnostic": {
+        "run": "raven_bifilar_20261024_013301_d33219_yaw",
+        "axis": "yaw",
+        "start_s": 28,
+        "end_s": 38,
+        "duration_s": 10,
+        "qualifies": false,
+        "reasons": [
+          "starting amplitude exceeds 10deg"
+        ],
+        "period_s": 1.3242865840206144,
+        "frequency_hz": 0.7551235601616829,
+        "decay_per_s": 0.03799527448758206,
+        "amplitude_deg": 12.187622782524626,
+        "residual_rms_deg": 0.07695537638307735,
+        "relative_residual": 0.01064071828484236,
+        "fitted_cycles": 7.536133130413596,
+        "max_rocking_deg": 0.75432674089287,
+        "world_vertical_in_marker": [
+          -0.04622770556414606,
+          0.013582480524230658,
+          0.9988385832861502
+        ],
+        "fit_failures": []
+      },
+      "orientation_exports_saved": true,
+      "selected_orientation": {
+        "window_s_after_cue": [
+          34.0,
+          44.0
+        ],
+        "samples": 2000,
+        "mean_world_from_marker_xyzw": [
+          -0.004027399876954621,
+          0.023658832910850143,
+          0.4462807506150186,
+          0.8945711437923888
+        ],
+        "mean_world_from_marker_matrix": [
+          [
+            0.6005475025115836,
+            -0.7986503302219141,
+            0.03873431635547617
+          ],
+          [
+            0.7982691958988979,
+            0.601634543361453,
+            0.028322554849132257
+          ],
+          [
+            -0.04592372051593273,
+            0.01391137199138577,
+            0.9988480793510548
+          ]
+        ],
+        "world_vertical_direction_in_marker": [
+          -0.04599148085998633,
+          0.013983179861015983,
+          0.9988439589692076
+        ],
+        "marker_axis_angles_to_unoriented_vertical_deg": [
+          87.36395239380283,
+          89.19879669855551,
+          2.7552822975318474
+        ],
+        "vertical_direction_variation_deg": {
+          "median": 0.14131518847005348,
+          "p95": 0.3951157352959738,
+          "maximum": 0.5629399768713357
+        },
+        "world_vertical_direction_in_body": [
+          -0.04599148085998634,
+          -0.013983179861015984,
+          -0.9988439589692076
+        ],
+        "intended_body_axis_misalignment_deg": 2.7552822975318474,
+        "mean_inertia_projection_coefficients_Ixx_Iyy_Izz_Ixy_Ixz_Iyz": [
+          0.002123038021665574,
+          0.00020011458001012003,
+          0.9976768473983251,
+          0.0012769411116186717,
+          0.0918748887372954,
+          0.027933985265748175
+        ]
+      },
+      "reported_suspension_geometry": {
+        "length_cm": 68.5,
+        "top_cm": 15.5,
+        "bottom_cm": 18.0
+      },
+      "nominal_marker_from_body_xyzw": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "run": "raven_bifilar_20261024_013616_277be8_yaw",
+      "axis": "yaw",
+      "samples": 11020,
+      "capture_error": null,
+      "selected_window": {
+        "run": "raven_bifilar_20261024_013616_277be8_yaw",
+        "axis": "yaw",
+        "start_s": 32,
+        "end_s": 42,
+        "duration_s": 10,
+        "qualifies": true,
+        "reasons": [],
+        "period_s": 1.3197442276613145,
+        "frequency_hz": 0.7577225791485936,
+        "decay_per_s": 0.04022904904910906,
+        "amplitude_deg": 9.896851476915922,
+        "residual_rms_deg": 0.059695139737110735,
+        "relative_residual": 0.010305575042491239,
+        "fitted_cycles": 7.562071339902965,
+        "max_rocking_deg": 0.4348510317286014,
+        "world_vertical_in_marker": [
+          -0.04591493186238119,
+          0.014021442539381935,
+          0.9988469443218955
+        ],
+        "fit_failures": []
+      },
+      "small_angle_windows": 9,
+      "ten_second_small_angle_windows": 4,
+      "raw_orientation_retained": true,
+      "pose_sha256": "aa242d0b899f654fc38198cd0a8a8acdcbc46b41ece10cf089e206ad039b1905",
+      "capture_rate_hz": 199.998383060536,
+      "max_source_gap_s": 0.00602062199999942,
+      "source_timestamps_valid": true,
+      "max_rotation_step_deg": 0.8130808563303644,
+      "pose_jumps_over_5deg": 0,
+      "pose_jumps_after_cue": 0,
+      "last_pose_jump_after_cue_s": null,
+      "pose_jump_times_after_cue_s": [],
+      "absolute_orientation_convention": "world_from_marker, quaternion xyzw; no body alignment assumed",
+      "verdict": "usable small-angle period window; geometry/registration pending",
+      "nearest_12deg_diagnostic": {
+        "run": "raven_bifilar_20261024_013616_277be8_yaw",
+        "axis": "yaw",
+        "start_s": 27,
+        "end_s": 37,
+        "duration_s": 10,
+        "qualifies": false,
+        "reasons": [
+          "starting amplitude exceeds 10deg"
+        ],
+        "period_s": 1.3229800135371783,
+        "frequency_hz": 0.75586931757673,
+        "decay_per_s": 0.0382625413260648,
+        "amplitude_deg": 11.935565870703359,
+        "residual_rms_deg": 0.07191992914533218,
+        "relative_residual": 0.01019391555209936,
+        "fitted_cycles": 7.543575789415766,
+        "max_rocking_deg": 0.6169857709490179,
+        "world_vertical_in_marker": [
+          -0.04622722331640872,
+          0.01380519978248864,
+          0.9988355521723385
+        ],
+        "fit_failures": []
+      },
+      "orientation_exports_saved": true,
+      "selected_orientation": {
+        "window_s_after_cue": [
+          32.0,
+          42.0
+        ],
+        "samples": 2000,
+        "mean_world_from_marker_xyzw": [
+          -0.004086786263046592,
+          0.023620552118065737,
+          0.449607868880932,
+          0.8929043240661482
+        ],
+        "mean_world_from_marker_matrix": [
+          [
+            0.5945896675159692,
+            -0.8031066848117434,
+            0.038506883721500934
+          ],
+          [
+            0.8027205562200566,
+            0.595672124836774,
+            0.028538190450805915
+          ],
+          [
+            -0.04585668877070191,
+            0.013941753947572171,
+            0.9988507353913562
+          ]
+        ],
+        "world_vertical_direction_in_marker": [
+          -0.04591493186238119,
+          0.014021442539381935,
+          0.9988469443218955
+        ],
+        "marker_axis_angles_to_unoriented_vertical_deg": [
+          87.36834296652259,
+          89.19660419362518,
+          2.7517217015495583
+        ],
+        "vertical_direction_variation_deg": {
+          "median": 0.1209140728200041,
+          "p95": 0.3157947708842252,
+          "maximum": 0.4348510317286014
+        },
+        "world_vertical_direction_in_body": [
+          -0.0459149318623812,
+          -0.014021442539381935,
+          -0.9988469443218955
+        ],
+        "intended_body_axis_misalignment_deg": 2.7517217015495583,
+        "mean_inertia_projection_coefficients_Ixx_Iyy_Izz_Ixy_Ixz_Iyz": [
+          0.002113070966781002,
+          0.00019977767122893972,
+          0.9976871513619916,
+          0.0012802775380776955,
+          0.09172288897338472,
+          0.02801056795335041
+        ]
+      },
+      "reported_suspension_geometry": {
+        "length_cm": 68.5,
+        "top_cm": 15.5,
+        "bottom_cm": 18.0
+      },
+      "nominal_marker_from_body_xyzw": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "run": "raven_bifilar_20261024_014956_52516e_roll",
+      "axis": "roll",
+      "samples": 11020,
+      "capture_error": null,
+      "selected_window": {
+        "run": "raven_bifilar_20261024_014956_52516e_roll",
+        "axis": "roll",
+        "start_s": 29,
+        "end_s": 39,
+        "duration_s": 10,
+        "qualifies": true,
+        "reasons": [],
+        "period_s": 1.2272857988148942,
+        "frequency_hz": 0.8148061364073726,
+        "decay_per_s": 0.04979692825841069,
+        "amplitude_deg": 9.570715294198537,
+        "residual_rms_deg": 0.2776394990901632,
+        "relative_residual": 0.05190878936167313,
+        "fitted_cycles": 8.13176524134558,
+        "max_rocking_deg": 1.4708769534199118,
+        "world_vertical_in_marker": [
+          0.9854103424473711,
+          0.0709166262960762,
+          0.1547168029418181
+        ],
+        "fit_failures": []
+      },
+      "small_angle_windows": 17,
+      "ten_second_small_angle_windows": 7,
+      "raw_orientation_retained": true,
+      "pose_sha256": "281a81405db75a6bffb662788e3ce25eac3b4a65052e9e46cbc129514ca259b5",
+      "capture_rate_hz": 199.99678126243836,
+      "max_source_gap_s": 0.006066838000002406,
+      "source_timestamps_valid": true,
+      "max_rotation_step_deg": 2.175703154265063,
+      "pose_jumps_over_5deg": 0,
+      "pose_jumps_after_cue": 0,
+      "last_pose_jump_after_cue_s": null,
+      "pose_jump_times_after_cue_s": [],
+      "absolute_orientation_convention": "world_from_marker, quaternion xyzw; no body alignment assumed",
+      "verdict": "usable small-angle period window; geometry/registration pending",
+      "nearest_12deg_diagnostic": {
+        "run": "raven_bifilar_20261024_014956_52516e_roll",
+        "axis": "roll",
+        "start_s": 24,
+        "end_s": 34,
+        "duration_s": 10,
+        "qualifies": false,
+        "reasons": [
+          "starting amplitude exceeds 10deg"
+        ],
+        "period_s": 1.2318228172543404,
+        "frequency_hz": 0.8118050631899646,
+        "decay_per_s": 0.04783806349612143,
+        "amplitude_deg": 12.153560791434263,
+        "residual_rms_deg": 0.28805485193934904,
+        "relative_residual": 0.04209242542352164,
+        "fitted_cycles": 8.101814530635847,
+        "max_rocking_deg": 1.436812693395134,
+        "world_vertical_in_marker": [
+          0.9855114895240917,
+          0.07054139692722693,
+          0.154243363991977
+        ],
+        "fit_failures": []
+      },
+      "orientation_exports_saved": true,
+      "selected_orientation": {
+        "window_s_after_cue": [
+          29.0,
+          39.0
+        ],
+        "samples": 2001,
+        "mean_world_from_marker_xyzw": [
+          0.4835818085307271,
+          -0.43452450383037733,
+          0.5272410559969962,
+          0.5471324875204245
+        ],
+        "mean_world_from_marker_matrix": [
+          [
+            0.06641064888427295,
+            -0.9971977118074853,
+            0.034443421442770406
+          ],
+          [
+            0.15668513015464253,
+            -0.023668993341353417,
+            -0.9873649521542827
+          ],
+          [
+            0.9854133121199407,
+            0.07096831912988683,
+            0.1546741800582308
+          ]
+        ],
+        "world_vertical_direction_in_marker": [
+          0.9854103424473711,
+          0.0709166262960762,
+          0.1547168029418181
+        ],
+        "marker_axis_angles_to_unoriented_vertical_deg": [
+          9.799177280722038,
+          85.93336311299362,
+          81.09962787282663
+        ],
+        "vertical_direction_variation_deg": {
+          "median": 0.3485611415995881,
+          "p95": 0.7922546772717436,
+          "maximum": 1.4708769534199118
+        },
+        "world_vertical_direction_in_body": [
+          0.9854103424473712,
+          -0.0709166262960762,
+          -0.1547168029418181
+        ],
+        "intended_body_axis_misalignment_deg": 9.799177280722,
+        "mean_inertia_projection_coefficients_Ixx_Iyy_Izz_Ixy_Ixz_Iyz": [
+          0.9709782379847871,
+          0.0050465517748291356,
+          0.023975210240382634,
+          -0.13975232796661408,
+          -0.30488857124956725,
+          0.021949466439697984
+        ]
+      },
+      "reported_suspension_geometry": {
+        "length_cm": 68.0,
+        "top_cm": 15.5,
+        "bottom_cm": 14.0
+      },
+      "nominal_marker_from_body_xyzw": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "run": "raven_bifilar_20261024_015616_92ccd9_roll",
+      "axis": "roll",
+      "samples": 11020,
+      "capture_error": null,
+      "selected_window": null,
+      "small_angle_windows": 0,
+      "ten_second_small_angle_windows": 0,
+      "raw_orientation_retained": true,
+      "pose_sha256": "0d23c467a5049f7cf98242db25888701396748f2bf36db466989ac5ed9bd8933",
+      "capture_rate_hz": 199.99958904885239,
+      "max_source_gap_s": 0.006122978000000501,
+      "source_timestamps_valid": true,
+      "max_rotation_step_deg": 2.464746809113036,
+      "pose_jumps_over_5deg": 0,
+      "pose_jumps_after_cue": 0,
+      "last_pose_jump_after_cue_s": null,
+      "pose_jump_times_after_cue_s": [],
+      "absolute_orientation_convention": "world_from_marker, quaternion xyzw; no body alignment assumed",
+      "verdict": "no qualifying small-angle window; retain as amplitude/diagnostic evidence",
+      "nearest_12deg_diagnostic": {
+        "run": "raven_bifilar_20261024_015616_92ccd9_roll",
+        "axis": "roll",
+        "start_s": 35,
+        "end_s": 45,
+        "duration_s": 10,
+        "qualifies": false,
+        "reasons": [
+          "starting amplitude exceeds 10deg"
+        ],
+        "period_s": 1.231716937801287,
+        "frequency_hz": 0.8118748466551736,
+        "decay_per_s": 0.04645816635339308,
+        "amplitude_deg": 12.299152189411188,
+        "residual_rms_deg": 0.2783697718870424,
+        "relative_residual": 0.03985363093927614,
+        "fitted_cycles": 8.102510969618633,
+        "max_rocking_deg": 1.2844426464059293,
+        "world_vertical_in_marker": [
+          0.9856201556910376,
+          0.06969450862516073,
+          0.15393370054368366
+        ],
+        "fit_failures": []
+      },
+      "orientation_exports_saved": true,
+      "reported_suspension_geometry": {
+        "length_cm": 68.0,
+        "top_cm": 15.5,
+        "bottom_cm": 14.0
+      },
+      "nominal_marker_from_body_xyzw": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "run": "raven_bifilar_20261024_015857_7364a6_pitch",
+      "axis": "pitch",
+      "samples": 11020,
+      "capture_error": null,
+      "selected_window": {
+        "run": "raven_bifilar_20261024_015857_7364a6_pitch",
+        "axis": "pitch",
+        "start_s": 26,
+        "end_s": 34.1,
+        "duration_s": 8.1,
+        "qualifies": true,
+        "reasons": [],
+        "period_s": 1.2551701972086116,
+        "frequency_hz": 0.7967047036520722,
+        "decay_per_s": 0.04893342772628744,
+        "amplitude_deg": 9.505236555855648,
+        "residual_rms_deg": 0.11027336433479035,
+        "relative_residual": 0.019779077354246898,
+        "fitted_cycles": 6.437374005508744,
+        "max_rocking_deg": 0.8622610302850968,
+        "world_vertical_in_marker": [
+          -0.012367931007625926,
+          -0.9988823163409474,
+          0.045619649099201014
+        ],
+        "fit_failures": []
+      },
+      "small_angle_windows": 3,
+      "ten_second_small_angle_windows": 0,
+      "raw_orientation_retained": true,
+      "pose_sha256": "53744b5c335b12d9b2eeeb012f11abfaeade845f7e57374fe958c0bedd3db771",
+      "capture_rate_hz": 199.99819717388786,
+      "max_source_gap_s": 0.006180347000000808,
+      "source_timestamps_valid": true,
+      "max_rotation_step_deg": 179.92036154827755,
+      "pose_jumps_over_5deg": 32,
+      "pose_jumps_after_cue": 32,
+      "last_pose_jump_after_cue_s": 35.619969427003525,
+      "pose_jump_times_after_cue_s": [
+        0.6299638870113995,
+        0.6351444690080825,
+        0.6950552710040938,
+        0.700111818005098,
+        0.7047441110044019,
+        0.7099852730025304,
+        0.7148464040074032,
+        0.7200890680105658,
+        0.7300414339988492,
+        0.7351036210020538,
+        0.7401223140041111,
+        0.7450173420074861,
+        0.7498238140105968,
+        0.7548288920079358,
+        1.0949217250017682,
+        1.0996372850058833,
+        1.2098529000068083,
+        1.214886239002226,
+        1.2196248910040595,
+        1.2245247270038817,
+        11.704898381009116,
+        11.719908523009508,
+        11.72484683401126,
+        11.754755040004966,
+        11.874954200000502,
+        11.87989728699904,
+        11.884683165000752,
+        11.890009327005828,
+        35.60538060500403,
+        35.61011981200136,
+        35.615150670011644,
+        35.619969427003525
+      ],
+      "absolute_orientation_convention": "world_from_marker, quaternion xyzw; no body alignment assumed",
+      "verdict": "usable small-angle period window; geometry/registration pending",
+      "nearest_12deg_diagnostic": {
+        "run": "raven_bifilar_20261024_015857_7364a6_pitch",
+        "axis": "pitch",
+        "start_s": 21,
+        "end_s": 31,
+        "duration_s": 10,
+        "qualifies": false,
+        "reasons": [
+          "starting amplitude exceeds 10deg"
+        ],
+        "period_s": 1.2599738793609128,
+        "frequency_hz": 0.7936672469013585,
+        "decay_per_s": 0.05002922065936665,
+        "amplitude_deg": 12.233628500666372,
+        "residual_rms_deg": 0.1504266527894655,
+        "relative_residual": 0.021863444604425356,
+        "fitted_cycles": 7.920799124075558,
+        "max_rocking_deg": 0.8309991180562712,
+        "world_vertical_in_marker": [
+          -0.011926357910002724,
+          -0.9988695511859891,
+          0.04601501603284723
+        ],
+        "fit_failures": []
+      },
+      "orientation_exports_saved": true,
+      "selected_orientation": {
+        "window_s_after_cue": [
+          26.0,
+          34.1
+        ],
+        "samples": 1619,
+        "mean_world_from_marker_xyzw": [
+          -0.690733246156396,
+          -0.002615985555697975,
+          0.011657456330725222,
+          0.7230109563386418
+        ],
+        "mean_world_from_marker_matrix": [
+          [
+            0.9997145206629392,
+            -0.01324304091073618,
+            -0.019887157743283052
+          ],
+          [
+            0.020470833689878204,
+            0.045503372732289826,
+            0.9987544182821059
+          ],
+          [
+            -0.012321612869709989,
+            -0.9988764012316153,
+            0.04576147854764018
+          ]
+        ],
+        "world_vertical_direction_in_marker": [
+          -0.012367931007625926,
+          -0.9988823163409474,
+          0.045619649099201014
+        ],
+        "marker_axis_angles_to_unoriented_vertical_deg": [
+          89.291351684688,
+          2.7091779958067908,
+          87.38527916964156
+        ],
+        "vertical_direction_variation_deg": {
+          "median": 0.23239296749704982,
+          "p95": 0.43093574888525693,
+          "maximum": 0.8622610302850968
+        },
+        "world_vertical_direction_in_body": [
+          -0.012367931007625926,
+          0.9988823163409474,
+          -0.045619649099201014
+        ],
+        "intended_body_axis_misalignment_deg": 2.7091779958067908,
+        "mean_inertia_projection_coefficients_Ixx_Iyy_Izz_Ixy_Ixz_Iyz": [
+          0.00016744452667817535,
+          0.9977440560678731,
+          0.0020884994054509937,
+          -0.02470699294065309,
+          0.0011346780364956252,
+          -0.09113455925029655
+        ]
+      },
+      "reported_suspension_geometry": {
+        "length_cm": 67.0,
+        "top_cm": 15.5,
+        "bottom_cm": 11.0
+      },
+      "nominal_marker_from_body_xyzw": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "run": "raven_bifilar_20261024_015956_a222c7_pitch",
+      "axis": "pitch",
+      "samples": 11020,
+      "capture_error": null,
+      "selected_window": {
+        "run": "raven_bifilar_20261024_015956_a222c7_pitch",
+        "axis": "pitch",
+        "start_s": 20,
+        "end_s": 30,
+        "duration_s": 10,
+        "qualifies": true,
+        "reasons": [],
+        "period_s": 1.254783948096704,
+        "frequency_hz": 0.7969499462571478,
+        "decay_per_s": 0.05103720076590126,
+        "amplitude_deg": 9.621052707618915,
+        "residual_rms_deg": 0.14040507436487992,
+        "relative_residual": 0.026198973568808806,
+        "fitted_cycles": 7.953560463646335,
+        "max_rocking_deg": 0.9032501140533452,
+        "world_vertical_in_marker": [
+          -0.012384512534642242,
+          -0.9988844858380762,
+          0.045567617902206654
+        ],
+        "fit_failures": []
+      },
+      "small_angle_windows": 44,
+      "ten_second_small_angle_windows": 16,
+      "raw_orientation_retained": true,
+      "pose_sha256": "294c27c851f9ae857a21a9f794f8154cdd82118b44f8280a3508b91e5041ecd5",
+      "capture_rate_hz": 199.9987827245338,
+      "max_source_gap_s": 0.0061225149999994954,
+      "source_timestamps_valid": true,
+      "max_rotation_step_deg": 179.91068471831417,
+      "pose_jumps_over_5deg": 16,
+      "pose_jumps_after_cue": 14,
+      "last_pose_jump_after_cue_s": 0.9847874520055484,
+      "pose_jump_times_after_cue_s": [
+        -2.330427426000824,
+        -2.2804864210047526,
+        0.3196997350023594,
+        0.3249105499999132,
+        0.3293797250080388,
+        0.3348435500083724,
+        0.6248276109981816,
+        0.6296859080030117,
+        0.9498174510081299,
+        0.9548088180017658,
+        0.959785612009,
+        0.9648646010027733,
+        0.9700388380006189,
+        0.974883161004982,
+        0.9798575040040305,
+        0.9847874520055484
+      ],
+      "absolute_orientation_convention": "world_from_marker, quaternion xyzw; no body alignment assumed",
+      "verdict": "usable small-angle period window; geometry/registration pending",
+      "nearest_12deg_diagnostic": {
+        "run": "raven_bifilar_20261024_015956_a222c7_pitch",
+        "axis": "pitch",
+        "start_s": 15,
+        "end_s": 25,
+        "duration_s": 10,
+        "qualifies": false,
+        "reasons": [
+          "starting amplitude exceeds 10deg"
+        ],
+        "period_s": 1.2597013014634624,
+        "frequency_hz": 0.7938389829702062,
+        "decay_per_s": 0.048938687756241786,
+        "amplitude_deg": 12.24492578988071,
+        "residual_rms_deg": 0.14745090459733654,
+        "relative_residual": 0.02141222335159086,
+        "fitted_cycles": 7.9225130500426575,
+        "max_rocking_deg": 0.8710527278092585,
+        "world_vertical_in_marker": [
+          -0.01137660947150614,
+          -0.9988962871956338,
+          0.04557170376133212
+        ],
+        "fit_failures": []
+      },
+      "orientation_exports_saved": true,
+      "selected_orientation": {
+        "window_s_after_cue": [
+          20.0,
+          30.0
+        ],
+        "samples": 1999,
+        "mean_world_from_marker_xyzw": [
+          -0.6907599092409696,
+          -0.00013776532866357314,
+          0.00907406131330553,
+          0.7230272403010859
+        ],
+        "mean_world_from_marker_matrix": [
+          [
+            0.9998352848639933,
+            -0.012931261487515886,
+            -0.012735211709237434
+          ],
+          [
+            0.013311912551212694,
+            0.0455368183933797,
+            0.9988739615961754
+          ],
+          [
+            -0.012336779367666252,
+            -0.9988789619603319,
+            0.04570145761224348
+          ]
+        ],
+        "world_vertical_direction_in_marker": [
+          -0.012384512534642242,
+          -0.9988844858380762,
+          0.045567617902206654
+        ],
+        "marker_axis_angles_to_unoriented_vertical_deg": [
+          89.2904015604036,
+          2.7065468832171153,
+          87.3882634410674
+        ],
+        "vertical_direction_variation_deg": {
+          "median": 0.31052260692187295,
+          "p95": 0.5359262998850938,
+          "maximum": 0.9032501140533452
+        },
+        "world_vertical_direction_in_body": [
+          -0.012384512534642242,
+          0.9988844858380762,
+          -0.04556761790220668
+        ],
+        "intended_body_axis_misalignment_deg": 2.7065468832171153,
+        "mean_inertia_projection_coefficients_Ixx_Iyy_Izz_Ixy_Ixz_Iyz": [
+          0.00016849389470113358,
+          0.997733894782607,
+          0.0020976113226922376,
+          -0.02473961484013451,
+          0.0011388242531099894,
+          -0.09102815695297725
+        ]
+      },
+      "reported_suspension_geometry": {
+        "length_cm": 67.0,
+        "top_cm": 15.5,
+        "bottom_cm": 11.0
+      },
+      "nominal_marker_from_body_xyzw": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "limits": [
+    "Overlapping candidate windows are not independent repeat measurements.",
+    "Mass, loaded string lengths/contact spacings, marker-to-body registration, fixture and COM corrections remain pending.",
+    "Abrupt near180deg tracked rotations are consistent with pose flips; they are not ordinary quaternion sign changes.",
+    "A fixed nonzero mounting tilt is preserved; rocking measures variation around its local mean.",
+    "Remaining period drift and rig dynamics limit precision; fitted residuals are not total inertia uncertainty."
+  ],
+  "repeat_advice": {
+    "yaw": "Two independent qualifying runs; sufficient signal for provisional analysis.",
+    "pitch": "Both pitch runs retain a clean qualifying window after excluding pose flips. Their selected periods agree within0.031%; the marker registration still requires confirmation.",
+    "roll": "Only the first roll run meets the strict10deg gate. Both roll runs follow a consistent amplitude trend; one additional small-angle repeat is useful if collecting more, but a provisional period is already available."
+  },
+  "candidate_window_counts_10s": {
+    "total_overlapping_windows": 238,
+    "large_starting_angle": 188,
+    "pose_discontinuity": 21,
+    "qualifying_small_angle": 29,
+    "other_fit_criterion": 0
+  },
+  "repeat_period_difference_percent": {
+    "yaw": 0.047328561712722816,
+    "pitch": 0.03078212089766552
+  },
+  "collection_decision": "Enough usable signal to begin provisional analysis for all three axes. One additional small-angle roll repeat is the most useful optional collection improvement.",
+  "reported_geometry": {
+    "yaw": {
+      "length_cm": 68.5,
+      "top_cm": 15.5,
+      "bottom_cm": 18.0
+    },
+    "roll": {
+      "length_cm": 68.0,
+      "top_cm": 15.5,
+      "bottom_cm": 14.0
+    },
+    "pitch": {
+      "length_cm": 67.0,
+      "top_cm": 15.5,
+      "bottom_cm": 11.0
+    }
+  },
+  "nominal_body_registration": "operator-described X alignment and180deg rotation about drone X; not a measured six-DOF CAD registration",
+  "COM_from_FC_body_mm": [
+    0,
+    0,
+    -25
+  ]
+}

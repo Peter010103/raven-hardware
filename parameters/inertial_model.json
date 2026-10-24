@@ -1,0 +1,60 @@
+{
+  "vehicle": "Raven",
+  "status": "adopted_final_working_model",
+  "mass_kg": 0.716,
+  "body_frame": "X forward, Y left, Z up; body reference origin at mean of M3\u2013M6",
+  "COM_body_m": [
+    -0.003000156283378601,
+    -0.0010000002384185792,
+    -0.001688334429264067
+  ],
+  "I_COM_kg_m2": [
+    [
+      0.0020581804585960302,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0017673633156382574,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0031496362931102938
+    ]
+  ],
+  "ixx_kg_m2": 0.0020581804585960302,
+  "iyy_kg_m2": 0.0017673633156382574,
+  "izz_kg_m2": 0.0031496362931102938,
+  "reference": "CAD FC position minus25mm along drone body Z",
+  "decision": "Use the COM from the CAD FC offset as the final working inertia reference.",
+  "suspension_axis_points_body_m": {
+    "yaw": [
+      0.0,
+      0.0,
+      -0.0036500000000000005
+    ],
+    "pitch": [
+      0.0,
+      0.07,
+      -0.0036500000000000005
+    ],
+    "roll": [
+      0.055,
+      0.0,
+      -0.0036500000000000005
+    ]
+  },
+  "axis_point_source": "fixture_geometry.json:110x140mm rectangle10mm below arms; rollfront/pitchleft edges inferred from pose and free-hanging stability",
+  "assumptions": [
+    "Suspension axes pass through the lower-contact midpoints in fixture_geometry.json; roll front / pitch left side selection is inferred from pose and free-hanging stability.",
+    "COM is 25 mm below the FC, with the approximate CAD FC reference and provisional CAD height registration.",
+    "Body-frame products of inertia at the estimated COM are zero. Three scalar measurements cannot identify six independent tensor entries.",
+    "The provided mass is used as total suspended mass when supplied; no unprovided marker, fixture or attachment masses are subtracted.",
+    "Zero products are assumed at COM. Reference-origin values are derived by a parallel-axis shift of that tensor; off-diagonal entries at the reference origin are not generally zero."
+  ],
+  "accuracy_status": "CAD-based adopted reference; suspension-axis placement, attachments and uncertainty remain uncalibrated.",
+  "calculation": "../data/processed/inertia/inertia_estimates.json"
+}

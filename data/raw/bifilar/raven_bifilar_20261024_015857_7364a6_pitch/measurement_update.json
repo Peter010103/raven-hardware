@@ -1,0 +1,20 @@
+{
+  "source": "Operator-supplied per-axis geometry2026-10-24",
+  "axis": "pitch",
+  "measurement_inputs": {
+    "length_cm": 67.0,
+    "top_cm": 15.5,
+    "bottom_cm": 11.0,
+    "mass_g": 716.0
+  },
+  "marker_from_body_xyzw": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "marker_to_drone_orientation_confirmed": true,
+  "registration_status": "operator-described X alignment and180deg rotation about drone X; not a measured six-DOF CAD registration",
+  "capture_config_preserved": true,
+  "mass_source": "Operator reported716g total suspended mass; assumed common tested configuration"
+}

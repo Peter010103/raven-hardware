@@ -1,0 +1,43 @@
+{
+  "purpose": "Approximate Raven drone CAD reference for marker registration and geometry",
+  "files": [
+    {
+      "path": "TBS_SO_v3_RPi_v2.usdz",
+      "sha256": "6ec7c9aba576d7e37999379cbc08c87f68c79428a890d41dbec363cd3c336df9",
+      "bytes": 25334012,
+      "archive_members": [
+        "TBS_SO_v3_RPi_v2.usdc",
+        "0/specularColor.png",
+        "1/diffuseColor.png"
+      ]
+    },
+    {
+      "path": "TBS_SO_v3_RPi_v2.f3z",
+      "sha256": "9d89c855341107b38ffbbc2146b3af5696311975394db00d15424c641e17875b",
+      "bytes": 117351605,
+      "archive_members": [
+        "09433128-0c88-46f4-965a-e3a60bea50e3.f3d",
+        "97c20553-ba38-45aa-86ba-7245cd80ee24.f3d",
+        "9bd8d706-ad8b-44b8-a131-cc9c2938ad7c.f3d",
+        "Manifest.json",
+        "c4497373-3817-4e7f-a31c-e0a2acfabb56.f3d",
+        "DesignDescription.json"
+      ]
+    }
+  ],
+  "cad_to_drone_body_transform_confirmed": false,
+  "marker_centres_in_CAD_frame_supplied": true,
+  "CAD_units_and_scale_verified": true,
+  "CAD_mass_properties_validated_against_measured_configuration": false,
+  "notes": [
+    "User supplied this approximate drone geometry on 2026-10-24.",
+    "Fusion file is an F3Z assembly archive containing four F3D designs.",
+    "Use measured mass and suspension geometry for bifilar inertia; do not infer these from the approximate CAD.",
+    "Registration will use corresponding marker-centre coordinates in CAD/body and Motive rigid-body coordinates once provided."
+  ],
+  "USDZ_stage_units": {
+    "metres_per_unit": 0.001,
+    "up_axis": "Y"
+  },
+  "marker_coordinates_status": "Motive marker centres supplied; provisional native-point-to-body display registration recorded separately."
+}

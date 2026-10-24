@@ -1,0 +1,135 @@
+{
+  "units": "mm; supplied Motive marker-location values",
+  "markers_motive_reported_mm": {
+    "M1": [
+      -34.53,
+      -0.716,
+      -41.54
+    ],
+    "M2": [
+      61.725,
+      -5.7121,
+      -3.984
+    ],
+    "M3": [
+      68.217,
+      -1.565,
+      -91.167
+    ],
+    "M4": [
+      73.173,
+      0.923,
+      88.617
+    ],
+    "M5": [
+      -69.552,
+      2.804,
+      -88.038
+    ],
+    "M6": [
+      -65.274,
+      1.765,
+      91.212
+    ],
+    "M7": [
+      -33.76,
+      -0.6287,
+      44.1
+    ]
+  },
+  "motor_plate_markers": [
+    "M3",
+    "M4",
+    "M5",
+    "M6"
+  ],
+  "motor_plate_marker_centroid_motive_mm": [
+    1.6409999999999947,
+    0.9817499999999999,
+    0.15600000000000236
+  ],
+  "model_origin_constraint": "Operator: centre of the four motor-region markers aligned with centre of the URDF/model. Use this centroid as the body/model reference origin; it is not a measured COM.",
+  "attachment_note": "The four markers near motor positions are attached approximately under the arm plates where the motors mount.",
+  "corrections": [
+    {
+      "marker": "M2",
+      "note": "Read61.725. as61.725 followed by a separator; remaining coordinates unchanged."
+    },
+    {
+      "marker": "M7",
+      "original_last_coordinate_mm": 441.1,
+      "operator_corrected_last_coordinate_mm": 44.1
+    }
+  ],
+  "pose_frame_alignment": {
+    "marker_from_body_xyzw": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation_marker_from_body": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "source": "Operator-confirmed180deg about drone X, with X facing forward.",
+    "type": "nominal orientation; no calibration uncertainty supplied"
+  },
+  "native_UI_to_stream_marker_basis": "Under investigation; supplied points retained exactly.",
+  "physical_marker_diameter_mm": null,
+  "marker_mass_g": null,
+  "COM_relative_to_marker_centroid_mm": null,
+  "COM_observation": {
+    "reported_offset_from_FC_body_mm": [
+      0.0,
+      0.0,
+      -25.0
+    ],
+    "status": "Operator confirmed estimated COM25mm below the FC along body-Z.",
+    "verbatim": "When levelling using a plumb line, the string placement was25mm down along the drone own Z axis from the FC location.",
+    "used_for_parallel_axis_correction": false,
+    "meaning": "Estimated COM, not lower-string attachment position.",
+    "FC_position_body_mm": null,
+    "COM_position_body_mm": null,
+    "note": "Combine the offset with actual FC position in the registered body frame. Approximate CAD FC position can be shown for preview only."
+  },
+  "live_NatNet_crosscheck": {
+    "source": "Read-only SDK data-description request to existing OptiTrack setup on2026-10-24",
+    "native_point_table_matches_Motive_UI_basis": true,
+    "ROS_publisher_conversion": "optitrack_tf_node.cpp copies NatNet xyz and quaternion xyzw directly; no local axis swap.",
+    "differences_from_operator_table_mm": {
+      "M2_z": {
+        "operator": -3.984,
+        "live": -3.18375
+      },
+      "M3_y": {
+        "operator": -1.565,
+        "live": 1.56529
+      }
+    },
+    "policy": "Keep operator values for preview; do not silently replace them with live values."
+  },
+  "marker_cluster_geometry": {
+    "singular_values_mm": [
+      189.53425545046562,
+      158.9450812836555,
+      5.345548209875925
+    ],
+    "smallest_to_largest_spread_ratio": 0.028203599381922663,
+    "note": "Near-planar marker layout. Recorded pitch pose flips are retained and excluded by quality checks; geometric ambiguity/occlusion is a possible cause, not independently diagnosed."
+  },
+  "operator_visual_orientation_confirmed": true
+}

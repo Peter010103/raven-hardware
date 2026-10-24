@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-10-24T00:59:52.965073+00:00",
+  "samples": 11020,
+  "cue_monotonic_s": 102130.377346927,
+  "first_stamp_ns": 1792803537867249236,
+  "last_stamp_ns": 1792803592962745874,
+  "rate_hz": 199.99819717388786,
+  "duplicate_or_reversed_stamps": 0,
+  "interrupted": false,
+  "error": null,
+  "pose_only": true,
+  "control_publishers_started": false
+}

@@ -1,0 +1,46 @@
+{
+  "status": "adopted_final_working_model",
+  "adopted_on": "2026-10-24",
+  "vehicle": "Raven",
+  "mass_total_kg": 0.716,
+  "selected_reference": "CAD FC position minus25mm along drone body Z",
+  "adopted_COM_body_m": [
+    -0.003000156283378601,
+    -0.0010000002384185792,
+    -0.001688334429264067
+  ],
+  "body_frame": "X forward, Y left, Z up; body reference origin at mean of M3\u2013M6",
+  "operator_decision": "Use the COM from the CAD FC offset as the final working inertia reference.",
+  "underlying_accuracy_status": "CAD-based adopted reference; suspension-axis placement, attachments and uncertainty remain uncalibrated.",
+  "freeze_policy": "The adopted COM is frozen here. Regenerating or adjusting a visual preview must not change the adopted numerical model.",
+  "source_preview_registration": "../data/processed/inertia/registration_preview.json",
+  "accuracy_inputs_still_missing": [
+    "Confirmation of inferred front roll / left pitch contact edges, and independently measured upper-anchor positions and individual loaded string lengths",
+    "Independent actual FC/COM survey; the CAD approximation is already accepted as the working reference",
+    "Mass/position of removable markers or fixture if a configuration excluding them is desired",
+    "Measurement tolerances on mass, string lengths and contact spacings",
+    "Resolution of M2-Z/M3-Y typed-versus-live marker coordinate differences",
+    "Additional independent directions if nonzero products of inertia are to be identified"
+  ],
+  "measurement_axis_points_body_m": {
+    "yaw": [
+      0.0,
+      0.0,
+      -0.0036500000000000005
+    ],
+    "pitch": [
+      0.0,
+      0.07,
+      -0.0036500000000000005
+    ],
+    "roll": [
+      0.055,
+      0.0,
+      -0.0036500000000000005
+    ]
+  },
+  "axis_point_source": "fixture_geometry.json:110x140mm rectangle10mm below arms; rollfront/pitchleft edges inferred from pose and free-hanging stability",
+  "fixture_plane_body_Z_m": -0.0036500000000000005,
+  "cad_arm_underside_body_Z_m": 0.00635,
+  "geometry_revision": "Replace previous common-origin suspension-axis approximation with lower-contact edge midpoints."
+}

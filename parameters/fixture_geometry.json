@@ -1,0 +1,129 @@
+{
+  "source": "Operator supplied110x140mm rectangle,10mm below arm undersides; two strings, different pairs for each axis.",
+  "rectangle_body_X_m": 0.11,
+  "rectangle_body_Y_m": 0.14,
+  "rectangle_axis_assignment": "X110mm/Y140mm inferred consistently from reported pitch/roll lower spacings.",
+  "arm_underside_body_Z_m": 0.00635,
+  "fixture_plane_body_Z_m": -0.0036500000000000005,
+  "fixture_depth_below_arm_m": 0.01,
+  "number_of_strings": 2,
+  "pairs": {
+    "yaw": {
+      "contacts_body_m": [
+        [
+          0.055,
+          0.07,
+          -0.0036500000000000005
+        ],
+        [
+          -0.055,
+          -0.07,
+          -0.0036500000000000005
+        ]
+      ],
+      "midpoint_body_m": [
+        0.0,
+        0.0,
+        -0.0036500000000000005
+      ],
+      "pair": "front-left / rear-right diagonal (illustrative; opposite diagonal has same midpoint)",
+      "pair_status": "diagonal illustrative; midpoint unaffected by diagonal choice",
+      "world_up_in_body": [
+        -0.0459149318623812,
+        -0.014021442539381935,
+        -0.9988469443218955
+      ],
+      "COM_height_above_midpoint_m": -0.0018076302439008764,
+      "model_assumption": "Strings attach freely and clear the airframe; no additional contact/support or imposed torque."
+    },
+    "pitch": {
+      "contacts_body_m": [
+        [
+          -0.055,
+          0.07,
+          -0.0036500000000000005
+        ],
+        [
+          0.055,
+          0.07,
+          -0.0036500000000000005
+        ]
+      ],
+      "midpoint_body_m": [
+        0.0,
+        0.07,
+        -0.0036500000000000005
+      ],
+      "pair": "left110mm edge",
+      "pair_status": "inferred from recorded up direction and freely hanging stability",
+      "world_up_in_body": [
+        -0.012384512534642242,
+        0.9988844858380762,
+        -0.04556761790220668
+      ],
+      "COM_height_above_midpoint_m": -0.07097303168673785,
+      "model_assumption": "Strings attach freely and clear the airframe; no additional contact/support or imposed torque."
+    },
+    "roll": {
+      "contacts_body_m": [
+        [
+          0.055,
+          -0.07,
+          -0.0036500000000000005
+        ],
+        [
+          0.055,
+          0.07,
+          -0.0036500000000000005
+        ]
+      ],
+      "midpoint_body_m": [
+        0.055,
+        0.0,
+        -0.0036500000000000005
+      ],
+      "pair": "front140mm edge",
+      "pair_status": "inferred from recorded up direction and freely hanging stability",
+      "world_up_in_body": [
+        0.9854103424473712,
+        -0.0709166262960762,
+        -0.1547168029418181
+      ],
+      "COM_height_above_midpoint_m": -0.05738653984754654,
+      "model_assumption": "Strings attach freely and clear the airframe; no additional contact/support or imposed torque."
+    }
+  },
+  "alternative_edges": {
+    "pitch": {
+      "other_midpoint_body_m": [
+        0.0,
+        -0.07,
+        -0.0036500000000000005
+      ],
+      "COM_height_above_other_midpoint_m": 0.06887079633059283
+    },
+    "roll": {
+      "other_midpoint_body_m": [
+        -0.055,
+        0.0,
+        -0.0036500000000000005
+      ],
+      "COM_height_above_other_midpoint_m": 0.051008597821664295
+    }
+  },
+  "adopted_COM_body_m": [
+    -0.003000156283378601,
+    -0.0010000002384185792,
+    -0.001688334429264067
+  ],
+  "COM_height_above_fixture_plane_m": 0.0019616655707359334,
+  "CAD_vertical_translation_cancels_in_COM_to_fixture_height": true,
+  "yaw_diagonal_m": 0.17804493814764857,
+  "yaw_reported_lower_spacing_m": 0.18,
+  "notes": [
+    "178.0mm rectangle diagonal and180mm reported yaw spacing are retained separately; inertia uses reported180mm.",
+    "Front/rear and left/right labels follow the confirmed body X-forward,Y-left,Z-up convention.",
+    "Side selection is a physical inference, not a direct mocap observation of the strings.",
+    "Upper-anchor line position and individual loaded string lengths were not separately measured."
+  ]
+}
