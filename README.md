@@ -30,6 +30,7 @@ The actuator is a **single tested rotor**, not an identified four-motor or CTBR 
 
 | Path | Contents |
 |---|---|
+| [docs/icmp-redirect-fix.md](docs/icmp-redirect-fix.md) | Pi ICMP redirect failure: observed cause, persistent sysctl fix and verification |
 | [models/raven.urdf](models/raven.urdf) | Robot mass, COM inertia and fixed marker/rotor frames |
 | [models/raven.xml](models/raven.xml) | Candidate MuJoCo free body with simplified geometry |
 | [docs/technical-notes.md](docs/technical-notes.md) | Robot frames, assumptions and regeneration |
